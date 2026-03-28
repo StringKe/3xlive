@@ -1,0 +1,37 @@
+[
+  {
+    "id": "decoy_beacon",
+    "name_key": "equipment.decoy_beacon.name",
+    "slot": "tactical",
+    "base_stats": { "dodge_chance": 0.04, "damage_reduction": 1 },
+    "tier": 1
+  },
+  {
+    "id": "chaff_dispenser",
+    "name_key": "equipment.chaff_dispenser.name",
+    "slot": "tactical",
+    "base_stats": { "dodge_chance": 0.07, "damage_reduction": 2 },
+    "tier": 2
+  },
+  {
+    "id": "ghost_cloak",
+    "name_key": "equipment.ghost_cloak.name",
+    "slot": "tactical",
+    "base_stats": { "dodge_chance": 0.11, "damage_reduction": 3, "move_speed": 0.05 },
+    "tier": 3
+  },
+  {
+    "id": "phase_shift_emitter",
+    "name_key": "equipment.phase_shift_emitter.name",
+    "slot": "tactical",
+    "base_stats": { "dodge_chance": 0.16, "damage_reduction": 5, "move_speed": 0.08 },
+    "tier": 4
+  },
+  {
+    "id": "null_field_projector",
+    "name_key": "equipment.null_field_projector.name",
+    "slot": "tactical",
+    "base_stats": { "dodge_chance": 0.22, "damage_reduction": 8, "move_speed": 0.12, "lifesteal": 0.02 },
+    "tier": 5
+  }
+]

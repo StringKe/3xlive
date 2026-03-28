@@ -1,0 +1,149 @@
+[
+  {
+    "id": "rusty_interceptor",
+    "name_key": "monster.rusty_interceptor.name",
+    "hp": 50,
+    "damage": 10,
+    "speed": 2,
+    "behaviors": ["chase", "charge"],
+    "traits": [],
+    "exp_value": 18,
+    "sprite_key": "E06_rusty_interceptor",
+    "ai": {
+      "aggro_range": 7,
+      "chase_range": 11,
+      "max_chase_chunks": 2,
+      "forget_time": 6,
+      "wander_radius": 2,
+      "aggro_variance": 0.25,
+      "speed_variance": 0.2
+    },
+    "passThrough": false
+  },
+  {
+    "id": "mine_layer",
+    "name_key": "monster.mine_layer.name",
+    "hp": 60,
+    "damage": 12,
+    "speed": 1,
+    "behaviors": ["patrol", "summon"],
+    "traits": [],
+    "exp_value": 22,
+    "sprite_key": "E07_mine_layer",
+    "ai": {
+      "aggro_range": 6,
+      "chase_range": 9,
+      "max_chase_chunks": 1,
+      "forget_time": 6,
+      "wander_radius": 3,
+      "aggro_variance": 0.2,
+      "speed_variance": 0.15
+    },
+    "passThrough": false
+  },
+  {
+    "id": "scrap_golem",
+    "name_key": "monster.scrap_golem.name",
+    "hp": 150,
+    "damage": 14,
+    "speed": 1,
+    "behaviors": ["chase", "regen"],
+    "traits": [],
+    "exp_value": 30,
+    "sprite_key": "E08_scrap_golem",
+    "ai": {
+      "aggro_range": 5,
+      "chase_range": 8,
+      "max_chase_chunks": 1,
+      "forget_time": 7,
+      "wander_radius": 2,
+      "aggro_variance": 0.2,
+      "speed_variance": 0.1
+    },
+    "passThrough": false
+  },
+  {
+    "id": "salvage_drone",
+    "name_key": "monster.salvage_drone.name",
+    "hp": 25,
+    "damage": 9,
+    "speed": 2,
+    "behaviors": ["chase", "flee"],
+    "traits": [],
+    "exp_value": 15,
+    "sprite_key": "E09_salvage_drone",
+    "ai": {
+      "aggro_range": 7,
+      "chase_range": 10,
+      "max_chase_chunks": 2,
+      "forget_time": 5,
+      "wander_radius": 3,
+      "aggro_variance": 0.3,
+      "speed_variance": 0.25
+    },
+    "passThrough": false
+  },
+  {
+    "id": "asteroid_lurker",
+    "name_key": "monster.asteroid_lurker.name",
+    "hp": 55,
+    "damage": 11,
+    "speed": 1.5,
+    "behaviors": ["cloak", "chase"],
+    "traits": [],
+    "exp_value": 20,
+    "sprite_key": "E10_asteroid_lurker",
+    "ai": {
+      "aggro_range": 6,
+      "chase_range": 10,
+      "max_chase_chunks": 2,
+      "forget_time": 6,
+      "wander_radius": 2,
+      "aggro_variance": 0.2,
+      "speed_variance": 0.2
+    },
+    "passThrough": false
+  },
+  {
+    "id": "rivet_gunner",
+    "name_key": "monster.rivet_gunner.name",
+    "hp": 65,
+    "damage": 13,
+    "speed": 1,
+    "behaviors": ["snipe"],
+    "traits": [],
+    "exp_value": 24,
+    "sprite_key": "E11_rivet_gunner",
+    "ai": {
+      "aggro_range": 9,
+      "chase_range": 14,
+      "max_chase_chunks": 2,
+      "forget_time": 7,
+      "wander_radius": 2,
+      "aggro_variance": 0.15,
+      "speed_variance": 0.1
+    },
+    "passThrough": false
+  },
+  {
+    "id": "chain_welder",
+    "name_key": "monster.chain_welder.name",
+    "hp": 70,
+    "damage": 12,
+    "speed": 1.5,
+    "behaviors": ["chase", "pull"],
+    "traits": [],
+    "exp_value": 25,
+    "sprite_key": "E12_chain_welder",
+    "ai": {
+      "aggro_range": 7,
+      "chase_range": 11,
+      "max_chase_chunks": 2,
+      "forget_time": 6,
+      "wander_radius": 2,
+      "aggro_variance": 0.2,
+      "speed_variance": 0.15
+    },
+    "passThrough": false
+  }
+]

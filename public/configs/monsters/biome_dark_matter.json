@@ -1,0 +1,107 @@
+[
+  {
+    "id": "void_wraith",
+    "name_key": "monster.void_wraith.name",
+    "hp": 80,
+    "damage": 35,
+    "speed": 2,
+    "behaviors": ["cloak", "chase", "blink"],
+    "traits": [],
+    "exp_value": 80,
+    "sprite_key": "E34_void_wraith",
+    "ai": {
+      "aggro_range": 9,
+      "chase_range": 14,
+      "max_chase_chunks": 3,
+      "forget_time": 8,
+      "wander_radius": 2,
+      "aggro_variance": 0.2,
+      "speed_variance": 0.2
+    },
+    "passThrough": false
+  },
+  {
+    "id": "dark_matter_leviathan",
+    "name_key": "monster.dark_matter_leviathan.name",
+    "hp": 450,
+    "damage": 42,
+    "speed": 0.5,
+    "behaviors": ["chase", "pull", "summon"],
+    "traits": [],
+    "exp_value": 130,
+    "sprite_key": "E35_dark_matter_leviathan",
+    "ai": {
+      "aggro_range": 8,
+      "chase_range": 12,
+      "max_chase_chunks": 2,
+      "forget_time": 12,
+      "wander_radius": 2,
+      "aggro_variance": 0.1,
+      "speed_variance": 0.05
+    },
+    "passThrough": false
+  },
+  {
+    "id": "null_sentry",
+    "name_key": "monster.null_sentry.name",
+    "hp": 150,
+    "damage": 38,
+    "speed": 1,
+    "behaviors": ["snipe", "reflect"],
+    "traits": [],
+    "exp_value": 90,
+    "sprite_key": "E36_null_sentry",
+    "ai": {
+      "aggro_range": 10,
+      "chase_range": 16,
+      "max_chase_chunks": 3,
+      "forget_time": 10,
+      "wander_radius": 2,
+      "aggro_variance": 0.15,
+      "speed_variance": 0.1
+    },
+    "passThrough": false
+  },
+  {
+    "id": "entropy_swarm",
+    "name_key": "monster.entropy_swarm.name",
+    "hp": 20,
+    "damage": 32,
+    "speed": 2,
+    "behaviors": ["chase", "split", "split"],
+    "traits": [],
+    "exp_value": 55,
+    "sprite_key": "E37_entropy_swarm",
+    "ai": {
+      "aggro_range": 8,
+      "chase_range": 12,
+      "max_chase_chunks": 2,
+      "forget_time": 6,
+      "wander_radius": 2,
+      "aggro_variance": 0.3,
+      "speed_variance": 0.25
+    },
+    "passThrough": false
+  },
+  {
+    "id": "shadow_mimic",
+    "name_key": "monster.shadow_mimic.name",
+    "hp": 90,
+    "damage": 36,
+    "speed": 1.5,
+    "behaviors": ["cloak", "formation"],
+    "traits": [],
+    "exp_value": 85,
+    "sprite_key": "E38_shadow_mimic",
+    "ai": {
+      "aggro_range": 8,
+      "chase_range": 13,
+      "max_chase_chunks": 2,
+      "forget_time": 8,
+      "wander_radius": 2,
+      "aggro_variance": 0.2,
+      "speed_variance": 0.15
+    },
+    "passThrough": false
+  }
+]

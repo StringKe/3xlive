@@ -1,0 +1,37 @@
+[
+  {
+    "id": "hardlight_barrier",
+    "name_key": "equipment.hardlight_barrier.name",
+    "slot": "advanced_shield",
+    "base_stats": { "max_hp": 30, "damage_reduction": 5, "dodge_chance": 0.05 },
+    "tier": 2
+  },
+  {
+    "id": "resonance_field",
+    "name_key": "equipment.resonance_field.name",
+    "slot": "advanced_shield",
+    "base_stats": { "max_hp": 50, "damage_reduction": 8, "dodge_chance": 0.08, "damage_reflect": 0.10 },
+    "tier": 3
+  },
+  {
+    "id": "ionic_bulwark",
+    "name_key": "equipment.ionic_bulwark.name",
+    "slot": "advanced_shield",
+    "base_stats": { "max_hp": 75, "damage_reduction": 12, "dodge_chance": 0.11, "damage_reflect": 0.18 },
+    "tier": 4
+  },
+  {
+    "id": "void_aegis",
+    "name_key": "equipment.void_aegis.name",
+    "slot": "advanced_shield",
+    "base_stats": { "max_hp": 110, "damage_reduction": 18, "dodge_chance": 0.16, "damage_reflect": 0.28, "luck": 12 },
+    "tier": 5
+  },
+  {
+    "id": "stellar_bulwark",
+    "name_key": "equipment.stellar_bulwark.name",
+    "slot": "advanced_shield",
+    "base_stats": { "max_hp": 140, "damage_reduction": 22, "dodge_chance": 0.20, "damage_reflect": 0.35, "lifesteal": 0.03 },
+    "tier": 5
+  }
+]

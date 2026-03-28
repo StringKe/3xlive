@@ -1,0 +1,11 @@
+[
+  {"id": "HZ_volcano", "type": "impassable", "sprite": "hazards/HZ_volcano", "damage_per_sec": 0, "speed_mult": 1.0},
+  {"id": "HZ_hive_wall", "type": "impassable", "sprite": "hazards/HZ_hive_wall", "damage_per_sec": 0, "speed_mult": 1.0},
+  {"id": "HZ_crystal_spire", "type": "impassable", "sprite": "hazards/HZ_crystal_spire", "damage_per_sec": 0, "speed_mult": 1.0},
+  {"id": "HZ_lightning", "type": "damage", "sprite": "hazards/HZ_lightning", "damage_per_sec": 15, "speed_mult": 1.0},
+  {"id": "HZ_acid_fog", "type": "damage", "sprite": "hazards/HZ_acid_fog", "damage_per_sec": 10, "speed_mult": 1.0},
+  {"id": "HZ_lava_crack", "type": "damage", "sprite": "hazards/HZ_lava_crack", "damage_per_sec": 20, "speed_mult": 1.0},
+  {"id": "HZ_spore_cloud", "type": "damage", "sprite": "hazards/HZ_spore_cloud", "damage_per_sec": 8, "speed_mult": 1.0},
+  {"id": "HZ_emp_field", "type": "debuff", "sprite": "hazards/HZ_emp_field", "damage_per_sec": 0, "speed_mult": 0.5},
+  {"id": "HZ_web_slime", "type": "debuff", "sprite": "hazards/HZ_web_slime", "damage_per_sec": 0, "speed_mult": 0.3}
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "basic_targeting",
+    "name_key": "equipment.basic_targeting.name",
+    "slot": "weapon_mod",
+    "base_stats": { "attack_damage": 3, "crit_rate": 0.02 },
+    "tier": 1
+  },
+  {
+    "id": "rifled_barrel",
+    "name_key": "equipment.rifled_barrel.name",
+    "slot": "weapon_mod",
+    "base_stats": { "attack_damage": 6, "crit_rate": 0.04 },
+    "tier": 2
+  },
+  {
+    "id": "neural_targeting",
+    "name_key": "equipment.neural_targeting.name",
+    "slot": "weapon_mod",
+    "base_stats": { "attack_damage": 10, "crit_rate": 0.07, "crit_damage": 0.20 },
+    "tier": 3
+  },
+  {
+    "id": "plasma_injector",
+    "name_key": "equipment.plasma_injector.name",
+    "slot": "weapon_mod",
+    "base_stats": { "attack_damage": 16, "crit_rate": 0.10, "crit_damage": 0.35 },
+    "tier": 4
+  },
+  {
+    "id": "antimatter_chamber",
+    "name_key": "equipment.antimatter_chamber.name",
+    "slot": "weapon_mod",
+    "base_stats": { "attack_damage": 24, "crit_rate": 0.15, "crit_damage": 0.55, "pierce_count": 1 },
+    "tier": 5
+  }
+]

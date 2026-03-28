@@ -1,0 +1,37 @@
+[
+  {
+    "id": "basic_thruster",
+    "name_key": "equipment.basic_thruster.name",
+    "slot": "engine",
+    "base_stats": { "move_speed": 0.05 },
+    "tier": 1
+  },
+  {
+    "id": "ion_booster",
+    "name_key": "equipment.ion_booster.name",
+    "slot": "engine",
+    "base_stats": { "move_speed": 0.09, "dodge_chance": 0.03 },
+    "tier": 2
+  },
+  {
+    "id": "afterburner_drive",
+    "name_key": "equipment.afterburner_drive.name",
+    "slot": "engine",
+    "base_stats": { "move_speed": 0.14, "dodge_chance": 0.05 },
+    "tier": 3
+  },
+  {
+    "id": "warp_impeller",
+    "name_key": "equipment.warp_impeller.name",
+    "slot": "engine",
+    "base_stats": { "move_speed": 0.20, "dodge_chance": 0.08, "cooldown_reduction": 0.05 },
+    "tier": 4
+  },
+  {
+    "id": "void_drive",
+    "name_key": "equipment.void_drive.name",
+    "slot": "engine",
+    "base_stats": { "move_speed": 0.28, "dodge_chance": 0.12, "cooldown_reduction": 0.10 },
+    "tier": 5
+  }
+]

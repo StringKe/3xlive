@@ -1,0 +1,149 @@
+[
+  {
+    "id": "elite_vanguard",
+    "name_key": "monster.elite_vanguard.name",
+    "hp": 120,
+    "damage": 45,
+    "speed": 2,
+    "behaviors": ["chase", "charge", "shield"],
+    "traits": [],
+    "exp_value": 100,
+    "sprite_key": "E39_elite_vanguard",
+    "ai": {
+      "aggro_range": 9,
+      "chase_range": 14,
+      "max_chase_chunks": 3,
+      "forget_time": 9,
+      "wander_radius": 2,
+      "aggro_variance": 0.2,
+      "speed_variance": 0.15
+    },
+    "passThrough": false
+  },
+  {
+    "id": "rebel_commander",
+    "name_key": "monster.rebel_commander.name",
+    "hp": 350,
+    "damage": 50,
+    "speed": 1,
+    "behaviors": ["summon", "shield", "snipe"],
+    "traits": [],
+    "exp_value": 140,
+    "sprite_key": "E40_rebel_commander",
+    "ai": {
+      "aggro_range": 10,
+      "chase_range": 15,
+      "max_chase_chunks": 3,
+      "forget_time": 12,
+      "wander_radius": 2,
+      "aggro_variance": 0.15,
+      "speed_variance": 0.1
+    },
+    "passThrough": false
+  },
+  {
+    "id": "citadel_turret",
+    "name_key": "monster.citadel_turret.name",
+    "hp": 400,
+    "damage": 55,
+    "speed": 0,
+    "behaviors": ["snipe", "reflect"],
+    "traits": [],
+    "exp_value": 120,
+    "sprite_key": "E41_citadel_turret",
+    "ai": {
+      "aggro_range": 12,
+      "chase_range": 18,
+      "max_chase_chunks": 0,
+      "forget_time": 99,
+      "wander_radius": 0,
+      "aggro_variance": 0.1,
+      "speed_variance": 0
+    },
+    "passThrough": false
+  },
+  {
+    "id": "dreadnought",
+    "name_key": "monster.dreadnought.name",
+    "hp": 500,
+    "damage": 60,
+    "speed": 0.5,
+    "behaviors": ["chase", "regen", "shield", "summon"],
+    "traits": [],
+    "exp_value": 180,
+    "sprite_key": "E42_dreadnought",
+    "ai": {
+      "aggro_range": 8,
+      "chase_range": 12,
+      "max_chase_chunks": 2,
+      "forget_time": 15,
+      "wander_radius": 2,
+      "aggro_variance": 0.1,
+      "speed_variance": 0.05
+    },
+    "passThrough": false
+  },
+  {
+    "id": "assassin_blade",
+    "name_key": "monster.assassin_blade.name",
+    "hp": 75,
+    "damage": 52,
+    "speed": 2.5,
+    "behaviors": ["blink", "charge", "cloak"],
+    "traits": [],
+    "exp_value": 110,
+    "sprite_key": "E43_assassin_blade",
+    "ai": {
+      "aggro_range": 9,
+      "chase_range": 14,
+      "max_chase_chunks": 3,
+      "forget_time": 8,
+      "wander_radius": 2,
+      "aggro_variance": 0.25,
+      "speed_variance": 0.2
+    },
+    "passThrough": false
+  },
+  {
+    "id": "gravity_well_device",
+    "name_key": "monster.gravity_well_device.name",
+    "hp": 200,
+    "damage": 48,
+    "speed": 0,
+    "behaviors": ["pull", "slow", "regen"],
+    "traits": [],
+    "exp_value": 130,
+    "sprite_key": "E44_gravity_well_device",
+    "ai": {
+      "aggro_range": 11,
+      "chase_range": 16,
+      "max_chase_chunks": 0,
+      "forget_time": 99,
+      "wander_radius": 0,
+      "aggro_variance": 0.1,
+      "speed_variance": 0
+    },
+    "passThrough": false
+  },
+  {
+    "id": "rebel_martyr",
+    "name_key": "monster.rebel_martyr.name",
+    "hp": 90,
+    "damage": 50,
+    "speed": 2,
+    "behaviors": ["chase", "kamikaze", "split"],
+    "traits": [],
+    "exp_value": 115,
+    "sprite_key": "E45_rebel_martyr",
+    "ai": {
+      "aggro_range": 9,
+      "chase_range": 14,
+      "max_chase_chunks": 3,
+      "forget_time": 7,
+      "wander_radius": 2,
+      "aggro_variance": 0.25,
+      "speed_variance": 0.2
+    },
+    "passThrough": false
+  }
+]

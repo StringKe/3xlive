@@ -1,0 +1,37 @@
+[workspace]
+members = ["game-core", "game-client", "wasm-validator"]
+resolver = "2"
+
+[workspace.dependencies]
+game-core = { path = "game-core" }
+bevy = { version = "0.18", default-features = false }
+bevy_ecs = { version = "0.18", default-features = false }
+serde = { version = "1", features = ["derive"] }
+bincode = "2"
+ron = "0.8"
+getrandom_02 = { package = "getrandom", version = "0.2", features = ["js"] }
+getrandom = { version = "0.3", features = ["wasm_js"] }
+wasm-bindgen = "0.2"
+wasm-bindgen-futures = "0.4"
+serde-wasm-bindgen = "0.6"
+bevy_egui = "0.39"
+web-sys = "0.3"
+js-sys = "0.3"
+
+# ─── dev profile：快速编译，依赖开启优化 ───
+
+[profile.dev]
+opt-level = 0 # 自身代码不优化，编译快
+debug = "line-tables-only" # 保留行号调试信息，减少 WASM 体积
+
+[profile.dev.package."*"]
+opt-level = 2 # 第三方依赖开启优化（bevy 不优化会极慢）
+
+# ─── release profile：最小 WASM 体积 ───
+
+[profile.release]
+opt-level = "z" # 最小体积
+lto = "thin" # thin LTO：体积接近 fat LTO，编译快数倍
+codegen-units = 4 # 4 个并行 codegen 单元（体积略增 ~2%，编译快 3x）
+strip = "symbols" # 剥离符号表
+panic = "abort" # WASM 不需要 unwind，减少体积

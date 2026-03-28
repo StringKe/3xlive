@@ -1,0 +1,79 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: 安装 Rust 工具链
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: "1.94.0"
+          targets: wasm32-unknown-unknown
+
+      - name: 缓存 Rust 依赖
+        uses: Swatinem/rust-cache@v2
+
+      - name: 安装 wasm-bindgen-cli（版本匹配 Cargo.lock）
+        run: cargo install wasm-bindgen-cli --version 0.2.114
+
+      - name: 构建 WASM 模块
+        env:
+          CARGO_BUILD_JOBS: "4"
+        run: make wasm-all
+
+      - name: 检查（fmt + lint + typecheck）
+        run: pnpm vp check
+
+      - name: 构建 Vite（server + assets）
+        env:
+          VITE_CLERK_PUBLISHABLE_KEY: ${{ secrets.VITE_CLERK_PUBLISHABLE_KEY }}
+        run: pnpm vp build
+
+      - name: 生成版本元数据
+        run: |
+          echo "{\"time\":$(date +%s%3N),\"version\":\"${{ github.sha }}\"}" > dist/client/_version.json
+
+      - name: 对静态资源添加内容 hash（CDN 缓存破坏）
+        run: node scripts/hash-assets.mjs
+
+      - name: 执行 D1 migrations
+        run: pnpm wrangler d1 migrations apply 3xlive --remote
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: 部署到 Cloudflare Workers
+        run: pnpm wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: 设置 Workers Secrets
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          echo "${{ secrets.CLERK_SECRET_KEY }}" | pnpm wrangler secret put CLERK_SECRET_KEY
+          echo "${{ secrets.CLERK_PUBLISHABLE_KEY }}" | pnpm wrangler secret put CLERK_PUBLISHABLE_KEY
+          echo "${{ secrets.SESSION_SECRET }}" | pnpm wrangler secret put SESSION_SECRET
+          echo "${{ secrets.TURNSTILE_SECRET }}" | pnpm wrangler secret put TURNSTILE_SECRET

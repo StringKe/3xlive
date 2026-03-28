@@ -1,0 +1,164 @@
+[
+  {
+    "id": "reinforced",
+    "name_key": "affix.reinforced.name",
+    "stat": "max_hp",
+    "min_value": 5,
+    "max_value": 30,
+    "weight": 100,
+    "min_quality": "common"
+  },
+  {
+    "id": "overcharged",
+    "name_key": "affix.overcharged.name",
+    "stat": "attack_damage",
+    "min_value": 3,
+    "max_value": 18,
+    "weight": 100,
+    "min_quality": "common"
+  },
+  {
+    "id": "calibrated",
+    "name_key": "affix.calibrated.name",
+    "stat": "crit_rate",
+    "min_value": 0.03,
+    "max_value": 0.12,
+    "weight": 80,
+    "min_quality": "common"
+  },
+  {
+    "id": "cryogenic",
+    "name_key": "affix.cryogenic.name",
+    "stat": "slow_strength",
+    "min_value": 0.10,
+    "max_value": 0.30,
+    "weight": 70,
+    "min_quality": "uncommon"
+  },
+  {
+    "id": "plasma_infused",
+    "name_key": "affix.plasma_infused.name",
+    "stat": "dot_damage",
+    "min_value": 0.10,
+    "max_value": 0.35,
+    "weight": 70,
+    "min_quality": "uncommon"
+  },
+  {
+    "id": "void_touched",
+    "name_key": "affix.void_touched.name",
+    "stat": "area_size",
+    "min_value": 0.08,
+    "max_value": 0.25,
+    "weight": 60,
+    "min_quality": "uncommon"
+  },
+  {
+    "id": "accelerated",
+    "name_key": "affix.accelerated.name",
+    "stat": "cooldown_reduction",
+    "min_value": 0.05,
+    "max_value": 0.20,
+    "weight": 90,
+    "min_quality": "common"
+  },
+  {
+    "id": "titanium_plated",
+    "name_key": "affix.titanium_plated.name",
+    "stat": "damage_reduction",
+    "min_value": 1,
+    "max_value": 8,
+    "weight": 80,
+    "min_quality": "common"
+  },
+  {
+    "id": "salvaged",
+    "name_key": "affix.salvaged.name",
+    "stat": "exp_bonus",
+    "min_value": 0.08,
+    "max_value": 0.25,
+    "weight": 90,
+    "min_quality": "common"
+  },
+  {
+    "id": "neural_linked",
+    "name_key": "affix.neural_linked.name",
+    "stat": "crit_damage",
+    "min_value": 0.15,
+    "max_value": 0.50,
+    "weight": 60,
+    "min_quality": "rare"
+  },
+  {
+    "id": "warp_threaded",
+    "name_key": "affix.warp_threaded.name",
+    "stat": "move_speed",
+    "min_value": 0.04,
+    "max_value": 0.15,
+    "weight": 80,
+    "min_quality": "common"
+  },
+  {
+    "id": "ion_shielded",
+    "name_key": "affix.ion_shielded.name",
+    "stat": "dodge_chance",
+    "min_value": 0.03,
+    "max_value": 0.12,
+    "weight": 70,
+    "min_quality": "uncommon"
+  },
+  {
+    "id": "graviton_core",
+    "name_key": "affix.graviton_core.name",
+    "stat": "pickup_range",
+    "min_value": 0.15,
+    "max_value": 0.40,
+    "weight": 70,
+    "min_quality": "uncommon"
+  },
+  {
+    "id": "quantum_resonant",
+    "name_key": "affix.quantum_resonant.name",
+    "stat": "luck",
+    "min_value": 5,
+    "max_value": 25,
+    "weight": 50,
+    "min_quality": "rare"
+  },
+  {
+    "id": "dark_matter_core",
+    "name_key": "affix.dark_matter_core.name",
+    "stat": "lifesteal",
+    "min_value": 0.01,
+    "max_value": 0.05,
+    "weight": 40,
+    "min_quality": "epic"
+  },
+  {
+    "id": "antimatter_laced",
+    "name_key": "affix.antimatter_laced.name",
+    "stat": "pierce_count",
+    "min_value": 1,
+    "max_value": 2,
+    "weight": 35,
+    "min_quality": "epic"
+  },
+  {
+    "id": "stellar_forged",
+    "name_key": "affix.stellar_forged.name",
+    "stat": "max_hp",
+    "min_value": 20,
+    "max_value": 80,
+    "weight": 30,
+    "min_quality": "legendary"
+  },
+  {
+    "id": "hive_synchronized",
+    "name_key": "affix.hive_synchronized.name",
+    "stat": "drone_damage",
+    "min_value": 0.10,
+    "max_value": 0.30,
+    "weight": 50,
+    "min_quality": "rare"
+  }
+]

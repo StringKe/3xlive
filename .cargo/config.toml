@@ -1,0 +1,6 @@
+[target.wasm32-unknown-unknown]
+rustflags = ['--cfg=getrandom_backend="wasm_js"']
+
+[build]
+# 并行前端编译（Rust 1.94 稳定版已支持）
+jobs = 32

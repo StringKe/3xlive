@@ -1,0 +1,149 @@
+[
+  {
+    "id": "ion_striker",
+    "name_key": "monster.ion_striker.name",
+    "hp": 55,
+    "damage": 16,
+    "speed": 2,
+    "behaviors": ["chase", "charge"],
+    "traits": [],
+    "exp_value": 30,
+    "sprite_key": "E13_ion_striker",
+    "ai": {
+      "aggro_range": 7,
+      "chase_range": 12,
+      "max_chase_chunks": 2,
+      "forget_time": 6,
+      "wander_radius": 2,
+      "aggro_variance": 0.25,
+      "speed_variance": 0.2
+    },
+    "passThrough": false
+  },
+  {
+    "id": "emp_bomber",
+    "name_key": "monster.emp_bomber.name",
+    "hp": 30,
+    "damage": 18,
+    "speed": 1.5,
+    "behaviors": ["flank", "kamikaze"],
+    "traits": [],
+    "exp_value": 25,
+    "sprite_key": "E14_emp_bomber",
+    "ai": {
+      "aggro_range": 8,
+      "chase_range": 12,
+      "max_chase_chunks": 2,
+      "forget_time": 5,
+      "wander_radius": 2,
+      "aggro_variance": 0.2,
+      "speed_variance": 0.2
+    },
+    "passThrough": false
+  },
+  {
+    "id": "storm_weaver",
+    "name_key": "monster.storm_weaver.name",
+    "hp": 65,
+    "damage": 17,
+    "speed": 1.5,
+    "behaviors": ["orbit", "snipe"],
+    "traits": [],
+    "exp_value": 35,
+    "sprite_key": "E15_storm_weaver",
+    "ai": {
+      "aggro_range": 8,
+      "chase_range": 13,
+      "max_chase_chunks": 2,
+      "forget_time": 7,
+      "wander_radius": 3,
+      "aggro_variance": 0.2,
+      "speed_variance": 0.15
+    },
+    "passThrough": false
+  },
+  {
+    "id": "capacitor_beast",
+    "name_key": "monster.capacitor_beast.name",
+    "hp": 180,
+    "damage": 20,
+    "speed": 1,
+    "behaviors": ["chase", "shield"],
+    "traits": [],
+    "exp_value": 45,
+    "sprite_key": "E16_capacitor_beast",
+    "ai": {
+      "aggro_range": 6,
+      "chase_range": 9,
+      "max_chase_chunks": 1,
+      "forget_time": 8,
+      "wander_radius": 2,
+      "aggro_variance": 0.15,
+      "speed_variance": 0.1
+    },
+    "passThrough": false
+  },
+  {
+    "id": "spark_swarm",
+    "name_key": "monster.spark_swarm.name",
+    "hp": 20,
+    "damage": 14,
+    "speed": 2,
+    "behaviors": ["chase", "split"],
+    "traits": [],
+    "exp_value": 22,
+    "sprite_key": "E17_spark_swarm",
+    "ai": {
+      "aggro_range": 7,
+      "chase_range": 11,
+      "max_chase_chunks": 2,
+      "forget_time": 5,
+      "wander_radius": 2,
+      "aggro_variance": 0.3,
+      "speed_variance": 0.25
+    },
+    "passThrough": false
+  },
+  {
+    "id": "voltage_phantom",
+    "name_key": "monster.voltage_phantom.name",
+    "hp": 60,
+    "damage": 18,
+    "speed": 1.5,
+    "behaviors": ["blink", "snipe"],
+    "traits": [],
+    "exp_value": 38,
+    "sprite_key": "E18_voltage_phantom",
+    "ai": {
+      "aggro_range": 8,
+      "chase_range": 13,
+      "max_chase_chunks": 2,
+      "forget_time": 6,
+      "wander_radius": 2,
+      "aggro_variance": 0.2,
+      "speed_variance": 0.15
+    },
+    "passThrough": false
+  },
+  {
+    "id": "pulse_leech",
+    "name_key": "monster.pulse_leech.name",
+    "hp": 70,
+    "damage": 15,
+    "speed": 1.5,
+    "behaviors": ["chase", "slow", "regen"],
+    "traits": [],
+    "exp_value": 40,
+    "sprite_key": "E19_pulse_leech",
+    "ai": {
+      "aggro_range": 7,
+      "chase_range": 11,
+      "max_chase_chunks": 2,
+      "forget_time": 7,
+      "wander_radius": 2,
+      "aggro_variance": 0.2,
+      "speed_variance": 0.15
+    },
+    "passThrough": false
+  }
+]

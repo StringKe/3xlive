@@ -1,0 +1,149 @@
+[
+  {
+    "id": "magma_cruiser",
+    "name_key": "monster.magma_cruiser.name",
+    "hp": 300,
+    "damage": 28,
+    "speed": 1,
+    "behaviors": ["chase", "regen"],
+    "traits": [],
+    "exp_value": 75,
+    "sprite_key": "E27_magma_cruiser",
+    "ai": {
+      "aggro_range": 7,
+      "chase_range": 11,
+      "max_chase_chunks": 2,
+      "forget_time": 9,
+      "wander_radius": 2,
+      "aggro_variance": 0.15,
+      "speed_variance": 0.1
+    },
+    "passThrough": false
+  },
+  {
+    "id": "flame_dart",
+    "name_key": "monster.flame_dart.name",
+    "hp": 20,
+    "damage": 30,
+    "speed": 2.5,
+    "behaviors": ["charge", "kamikaze"],
+    "traits": [],
+    "exp_value": 45,
+    "sprite_key": "E28_flame_dart",
+    "ai": {
+      "aggro_range": 9,
+      "chase_range": 14,
+      "max_chase_chunks": 3,
+      "forget_time": 5,
+      "wander_radius": 2,
+      "aggro_variance": 0.3,
+      "speed_variance": 0.2
+    },
+    "passThrough": false
+  },
+  {
+    "id": "cinder_swarm",
+    "name_key": "monster.cinder_swarm.name",
+    "hp": 25,
+    "damage": 26,
+    "speed": 2,
+    "behaviors": ["chase", "formation"],
+    "traits": [],
+    "exp_value": 40,
+    "sprite_key": "E29_cinder_swarm",
+    "ai": {
+      "aggro_range": 8,
+      "chase_range": 12,
+      "max_chase_chunks": 2,
+      "forget_time": 6,
+      "wander_radius": 2,
+      "aggro_variance": 0.3,
+      "speed_variance": 0.2
+    },
+    "passThrough": false
+  },
+  {
+    "id": "thermal_sniper",
+    "name_key": "monster.thermal_sniper.name",
+    "hp": 65,
+    "damage": 32,
+    "speed": 1.5,
+    "behaviors": ["snipe", "flee"],
+    "traits": [],
+    "exp_value": 55,
+    "sprite_key": "E30_thermal_sniper",
+    "ai": {
+      "aggro_range": 10,
+      "chase_range": 16,
+      "max_chase_chunks": 3,
+      "forget_time": 7,
+      "wander_radius": 3,
+      "aggro_variance": 0.15,
+      "speed_variance": 0.1
+    },
+    "passThrough": false
+  },
+  {
+    "id": "lava_titan",
+    "name_key": "monster.lava_titan.name",
+    "hp": 500,
+    "damage": 38,
+    "speed": 0.5,
+    "behaviors": ["chase", "shield", "regen"],
+    "traits": [],
+    "exp_value": 110,
+    "sprite_key": "E31_lava_titan",
+    "ai": {
+      "aggro_range": 6,
+      "chase_range": 9,
+      "max_chase_chunks": 1,
+      "forget_time": 12,
+      "wander_radius": 2,
+      "aggro_variance": 0.1,
+      "speed_variance": 0.05
+    },
+    "passThrough": false
+  },
+  {
+    "id": "eruption_drone",
+    "name_key": "monster.eruption_drone.name",
+    "hp": 70,
+    "damage": 27,
+    "speed": 1.5,
+    "behaviors": ["summon", "patrol"],
+    "traits": [],
+    "exp_value": 58,
+    "sprite_key": "E32_eruption_drone",
+    "ai": {
+      "aggro_range": 7,
+      "chase_range": 11,
+      "max_chase_chunks": 2,
+      "forget_time": 7,
+      "wander_radius": 3,
+      "aggro_variance": 0.2,
+      "speed_variance": 0.15
+    },
+    "passThrough": false
+  },
+  {
+    "id": "slag_reflector",
+    "name_key": "monster.slag_reflector.name",
+    "hp": 80,
+    "damage": 28,
+    "speed": 1.5,
+    "behaviors": ["chase", "reflect"],
+    "traits": [],
+    "exp_value": 62,
+    "sprite_key": "E33_slag_reflector",
+    "ai": {
+      "aggro_range": 7,
+      "chase_range": 11,
+      "max_chase_chunks": 2,
+      "forget_time": 7,
+      "wander_radius": 2,
+      "aggro_variance": 0.2,
+      "speed_variance": 0.15
+    },
+    "passThrough": false
+  }
+]

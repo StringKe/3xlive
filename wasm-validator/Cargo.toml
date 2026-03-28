@@ -1,0 +1,15 @@
+[package]
+name = "wasm-validator"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+game-core.workspace = true
+bincode.workspace = true
+wasm-bindgen.workspace = true
+bevy_ecs.workspace = true
+getrandom_02.workspace = true
+getrandom.workspace = true

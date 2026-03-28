@@ -1,0 +1,6 @@
+[tools]
+node = "22"
+rust = "1.94.0"
+
+[env]
+RUSTUP_TOOLCHAIN = "1.94.0"

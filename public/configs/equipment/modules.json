@@ -1,0 +1,37 @@
+[
+  {
+    "id": "salvage_scanner",
+    "name_key": "equipment.salvage_scanner.name",
+    "slot": "module",
+    "base_stats": { "exp_bonus": 0.08, "pickup_range": 0.10 },
+    "tier": 1
+  },
+  {
+    "id": "loot_matrix",
+    "name_key": "equipment.loot_matrix.name",
+    "slot": "module",
+    "base_stats": { "exp_bonus": 0.15, "pickup_range": 0.20, "luck": 5 },
+    "tier": 2
+  },
+  {
+    "id": "deep_scan_array",
+    "name_key": "equipment.deep_scan_array.name",
+    "slot": "module",
+    "base_stats": { "exp_bonus": 0.22, "pickup_range": 0.32, "luck": 10 },
+    "tier": 3
+  },
+  {
+    "id": "quantum_scanner",
+    "name_key": "equipment.quantum_scanner.name",
+    "slot": "module",
+    "base_stats": { "exp_bonus": 0.30, "pickup_range": 0.45, "luck": 18 },
+    "tier": 4
+  },
+  {
+    "id": "omniscience_grid",
+    "name_key": "equipment.omniscience_grid.name",
+    "slot": "module",
+    "base_stats": { "exp_bonus": 0.40, "pickup_range": 0.60, "luck": 28, "crit_rate": 0.05 },
+    "tier": 5
+  }
+]

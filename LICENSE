@@ -1,0 +1,26 @@
+GNU Affero General Public License v3.0 (AGPL-3.0)
+
+Copyright (c) 2026 3X Live
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+---
+
+AGPL-3.0 要求：
+- 允许商业使用、修改、分发
+- 修改后的代码必须以相同许可证开源
+- 通过网络提供服务（如 SaaS）也必须公开源码
+- 必须保留版权声明和许可证
+
+完整许可证文本：https://www.gnu.org/licenses/agpl-3.0.html

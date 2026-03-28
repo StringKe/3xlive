@@ -1,0 +1,1597 @@
+[
+	{
+		"id": "pulse_pistol",
+		"name_key": "weapon.pulse_pistol.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 12,
+			"cooldown": 400,
+			"range": 7,
+			"projectile_count": 1,
+			"projectile_speed": 12,
+			"pierce": 0,
+			"duration": 800,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 2,
+			"cooldown": -10,
+			"projectile_count": 1,
+			"projectile_count_interval": 4
+		},
+		"behavior": {
+			"type": "straight"
+		},
+		"tags": [
+			"projectile",
+			"kinetic",
+			"rapid"
+		],
+		"sprite_key": "projectile-pulse_pistol"
+	},
+	{
+		"id": "gatling_turret",
+		"name_key": "weapon.gatling_turret.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 10,
+			"cooldown": 150,
+			"range": 8,
+			"projectile_count": 1,
+			"projectile_speed": 14,
+			"pierce": 0,
+			"duration": 700,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 2,
+			"cooldown": -5,
+			"projectile_count": 1,
+			"projectile_count_interval": 5
+		},
+		"behavior": {
+			"type": "straight"
+		},
+		"tags": [
+			"projectile",
+			"kinetic",
+			"rapid"
+		],
+		"sprite_key": "projectile-gatling_turret"
+	},
+	{
+		"id": "railgun",
+		"name_key": "weapon.railgun.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 70,
+			"cooldown": 2500,
+			"range": 12,
+			"projectile_count": 1,
+			"projectile_speed": 20,
+			"pierce": 999,
+			"duration": 1000,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 12,
+			"cooldown": -60,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "beam",
+			"instant": true
+		},
+		"tags": [
+			"projectile",
+			"kinetic",
+			"piercing",
+			"heavy"
+		],
+		"sprite_key": "projectile-railgun"
+	},
+	{
+		"id": "shotgun_blast",
+		"name_key": "weapon.shotgun_blast.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 18,
+			"cooldown": 1200,
+			"range": 5,
+			"projectile_count": 5,
+			"projectile_speed": 10,
+			"pierce": 0,
+			"duration": 600,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 4,
+			"cooldown": -25,
+			"projectile_count": 1,
+			"projectile_count_interval": 4
+		},
+		"behavior": {
+			"type": "spread",
+			"spread_angle": 50,
+			"spread_count": 5
+		},
+		"tags": [
+			"projectile",
+			"kinetic",
+			"heavy"
+		],
+		"sprite_key": "projectile-shotgun_blast"
+	},
+	{
+		"id": "ricochet_rounds",
+		"name_key": "weapon.ricochet_rounds.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 20,
+			"cooldown": 900,
+			"range": 8,
+			"projectile_count": 1,
+			"projectile_speed": 11,
+			"pierce": 0,
+			"duration": 3000,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 4,
+			"cooldown": -20,
+			"projectile_count": 1,
+			"projectile_count_interval": 4
+		},
+		"behavior": {
+			"type": "chain",
+			"bounce_count": 5,
+			"bounce_range": 5
+		},
+		"tags": [
+			"projectile",
+			"kinetic"
+		],
+		"sprite_key": "projectile-ricochet_rounds"
+	},
+	{
+		"id": "flak_cannon",
+		"name_key": "weapon.flak_cannon.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 22,
+			"cooldown": 1400,
+			"range": 6,
+			"projectile_count": 4,
+			"projectile_speed": 9,
+			"pierce": 0,
+			"duration": 900,
+			"aoe_radius": 2
+		},
+		"per_level": {
+			"damage": 4,
+			"cooldown": -30,
+			"projectile_count": 1,
+			"projectile_count_interval": 4
+		},
+		"behavior": {
+			"type": "lob",
+			"explode_on_land": true
+		},
+		"tags": [
+			"projectile",
+			"kinetic",
+			"explosive"
+		],
+		"sprite_key": "projectile-flak_cannon"
+	},
+	{
+		"id": "sniper_beam",
+		"name_key": "weapon.sniper_beam.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 60,
+			"cooldown": 3000,
+			"range": 12,
+			"projectile_count": 1,
+			"projectile_speed": 25,
+			"pierce": 999,
+			"duration": 600,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 10,
+			"cooldown": -80,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "straight"
+		},
+		"tags": [
+			"projectile",
+			"kinetic",
+			"piercing"
+		],
+		"sprite_key": "projectile-sniper_beam"
+	},
+	{
+		"id": "auto_turret",
+		"name_key": "weapon.auto_turret.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 18,
+			"cooldown": 2500,
+			"range": 9,
+			"projectile_count": 1,
+			"projectile_speed": 12,
+			"pierce": 0,
+			"duration": 8000,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 4,
+			"cooldown": -50,
+			"projectile_count": 1,
+			"projectile_count_interval": 4
+		},
+		"behavior": {
+			"type": "summon",
+			"summon_count": 1,
+			"summon_lifetime": 8000
+		},
+		"tags": [
+			"summon",
+			"kinetic",
+			"drone"
+		],
+		"sprite_key": "projectile-auto_turret"
+	},
+	{
+		"id": "laser_pointer",
+		"name_key": "weapon.laser_pointer.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 10,
+			"cooldown": 0,
+			"range": 9,
+			"projectile_count": 1,
+			"projectile_speed": 0,
+			"pierce": 999,
+			"duration": 500,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 2,
+			"cooldown": 0,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "beam",
+			"ramp_up": true,
+			"ramp_duration": 1500
+		},
+		"tags": [
+			"beam",
+			"energy"
+		],
+		"sprite_key": "projectile-laser_pointer"
+	},
+	{
+		"id": "photon_burst",
+		"name_key": "weapon.photon_burst.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 16,
+			"cooldown": 1000,
+			"range": 8,
+			"projectile_count": 3,
+			"projectile_speed": 15,
+			"pierce": 0,
+			"duration": 700,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 3,
+			"cooldown": -20,
+			"projectile_count": 1,
+			"projectile_count_interval": 3
+		},
+		"behavior": {
+			"type": "straight",
+			"burst_count": 3,
+			"burst_interval": 80
+		},
+		"tags": [
+			"projectile",
+			"energy",
+			"rapid"
+		],
+		"sprite_key": "projectile-photon_burst"
+	},
+	{
+		"id": "prism_refractor",
+		"name_key": "weapon.prism_refractor.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 20,
+			"cooldown": 1000,
+			"range": 9,
+			"projectile_count": 1,
+			"projectile_speed": 13,
+			"pierce": 3,
+			"duration": 2500,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 4,
+			"cooldown": -20,
+			"projectile_count": 1,
+			"projectile_count_interval": 4
+		},
+		"behavior": {
+			"type": "bounce",
+			"bounce_count": 4
+		},
+		"tags": [
+			"projectile",
+			"energy",
+			"piercing"
+		],
+		"sprite_key": "projectile-prism_refractor"
+	},
+	{
+		"id": "solar_flare",
+		"name_key": "weapon.solar_flare.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 40,
+			"cooldown": 2000,
+			"range": 5,
+			"projectile_count": 12,
+			"projectile_speed": 0,
+			"pierce": 999,
+			"duration": 400,
+			"aoe_radius": 5
+		},
+		"per_level": {
+			"damage": 8,
+			"cooldown": -50,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "nova",
+			"waves": 1,
+			"wave_interval": 2000
+		},
+		"tags": [
+			"nova",
+			"energy",
+			"area"
+		],
+		"sprite_key": "projectile-solar_flare"
+	},
+	{
+		"id": "particle_whip",
+		"name_key": "weapon.particle_whip.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 22,
+			"cooldown": 800,
+			"range": 4,
+			"projectile_count": 1,
+			"projectile_speed": 0,
+			"pierce": 999,
+			"duration": 600,
+			"aoe_radius": 2.5
+		},
+		"per_level": {
+			"damage": 4,
+			"cooldown": -15,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "beam",
+			"arc_angle": 90
+		},
+		"tags": [
+			"beam",
+			"energy",
+			"area"
+		],
+		"sprite_key": "projectile-particle_whip"
+	},
+	{
+		"id": "neutron_star",
+		"name_key": "weapon.neutron_star.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 38,
+			"cooldown": 0,
+			"range": 3.5,
+			"projectile_count": 2,
+			"projectile_speed": 2.5,
+			"pierce": 999,
+			"duration": 0,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 7,
+			"cooldown": 0,
+			"projectile_count": 1,
+			"projectile_count_interval": 3
+		},
+		"behavior": {
+			"type": "orbit",
+			"radius": 3.5,
+			"speed": 2.5
+		},
+		"tags": [
+			"orbit",
+			"energy",
+			"heavy"
+		],
+		"sprite_key": "projectile-neutron_star"
+	},
+	{
+		"id": "photon_shield",
+		"name_key": "weapon.photon_shield.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 12,
+			"cooldown": 0,
+			"range": 2,
+			"projectile_count": 4,
+			"projectile_speed": 1.5,
+			"pierce": 999,
+			"duration": 0,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 2,
+			"cooldown": 0,
+			"projectile_count": 1,
+			"projectile_count_interval": 4
+		},
+		"behavior": {
+			"type": "orbit",
+			"radius": 2,
+			"speed": 1.5,
+			"blocks_projectiles": true
+		},
+		"tags": [
+			"orbit",
+			"energy"
+		],
+		"sprite_key": "projectile-photon_shield"
+	},
+	{
+		"id": "plasma_caster",
+		"name_key": "weapon.plasma_caster.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 20,
+			"cooldown": 900,
+			"range": 7,
+			"projectile_count": 1,
+			"projectile_speed": 10,
+			"pierce": 0,
+			"duration": 800,
+			"aoe_radius": 1
+		},
+		"per_level": {
+			"damage": 4,
+			"cooldown": -20,
+			"projectile_count": 1,
+			"projectile_count_interval": 4
+		},
+		"behavior": {
+			"type": "straight",
+			"dot_duration": 3000,
+			"dot_tick": 500
+		},
+		"tags": [
+			"projectile",
+			"plasma",
+			"dot"
+		],
+		"sprite_key": "projectile-plasma_caster"
+	},
+	{
+		"id": "plasma_grenade",
+		"name_key": "weapon.plasma_grenade.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 45,
+			"cooldown": 2000,
+			"range": 6,
+			"projectile_count": 1,
+			"projectile_speed": 7,
+			"pierce": 0,
+			"duration": 1200,
+			"aoe_radius": 3
+		},
+		"per_level": {
+			"damage": 9,
+			"cooldown": -50,
+			"projectile_count": 1,
+			"projectile_count_interval": 5
+		},
+		"behavior": {
+			"type": "lob",
+			"explode_on_land": true
+		},
+		"tags": [
+			"projectile",
+			"plasma",
+			"explosive",
+			"area"
+		],
+		"sprite_key": "projectile-plasma_grenade"
+	},
+	{
+		"id": "plasma_vortex",
+		"name_key": "weapon.plasma_vortex.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 15,
+			"cooldown": 3500,
+			"range": 4,
+			"projectile_count": 1,
+			"projectile_speed": 0,
+			"pierce": 999,
+			"duration": 4000,
+			"aoe_radius": 4
+		},
+		"per_level": {
+			"damage": 3,
+			"cooldown": -80,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "vortex",
+			"pull_radius": 4,
+			"tick_interval": 300
+		},
+		"tags": [
+			"zone",
+			"plasma",
+			"area"
+		],
+		"sprite_key": "projectile-plasma_vortex"
+	},
+	{
+		"id": "plasma_lance",
+		"name_key": "weapon.plasma_lance.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 80,
+			"cooldown": 2000,
+			"range": 10,
+			"projectile_count": 1,
+			"projectile_speed": 18,
+			"pierce": 999,
+			"duration": 800,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 14,
+			"cooldown": -50,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "charge",
+			"charge_duration": 2000
+		},
+		"tags": [
+			"projectile",
+			"plasma",
+			"piercing",
+			"heavy"
+		],
+		"sprite_key": "projectile-plasma_lance"
+	},
+	{
+		"id": "plasma_drone",
+		"name_key": "weapon.plasma_drone.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 22,
+			"cooldown": 2800,
+			"range": 8,
+			"projectile_count": 1,
+			"projectile_speed": 10,
+			"pierce": 0,
+			"duration": 7000,
+			"aoe_radius": 1.5
+		},
+		"per_level": {
+			"damage": 4,
+			"cooldown": -60,
+			"projectile_count": 1,
+			"projectile_count_interval": 5
+		},
+		"behavior": {
+			"type": "summon",
+			"summon_count": 1,
+			"summon_lifetime": 7000
+		},
+		"tags": [
+			"summon",
+			"plasma",
+			"drone"
+		],
+		"sprite_key": "projectile-plasma_drone"
+	},
+	{
+		"id": "tesla_coil",
+		"name_key": "weapon.tesla_coil.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 24,
+			"cooldown": 1200,
+			"range": 7,
+			"projectile_count": 1,
+			"projectile_speed": 14,
+			"pierce": 0,
+			"duration": 1200,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 5,
+			"cooldown": -30,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "chain",
+			"bounce_count": 4,
+			"bounce_range": 7
+		},
+		"tags": [
+			"chain",
+			"electric"
+		],
+		"sprite_key": "projectile-tesla_coil"
+	},
+	{
+		"id": "arc_emitter",
+		"name_key": "weapon.arc_emitter.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 20,
+			"cooldown": 700,
+			"range": 4,
+			"projectile_count": 1,
+			"projectile_speed": 0,
+			"pierce": 999,
+			"duration": 500,
+			"aoe_radius": 2
+		},
+		"per_level": {
+			"damage": 4,
+			"cooldown": -15,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "beam",
+			"arc_angle": 60
+		},
+		"tags": [
+			"beam",
+			"electric",
+			"area"
+		],
+		"sprite_key": "projectile-arc_emitter"
+	},
+	{
+		"id": "ball_lightning",
+		"name_key": "weapon.ball_lightning.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 22,
+			"cooldown": 1600,
+			"range": 9,
+			"projectile_count": 1,
+			"projectile_speed": 5,
+			"pierce": 3,
+			"duration": 3000,
+			"aoe_radius": 1.5
+		},
+		"per_level": {
+			"damage": 4,
+			"cooldown": -40,
+			"projectile_count": 1,
+			"projectile_count_interval": 4
+		},
+		"behavior": {
+			"type": "homing",
+			"tracking_speed": 2
+		},
+		"tags": [
+			"projectile",
+			"electric"
+		],
+		"sprite_key": "projectile-ball_lightning"
+	},
+	{
+		"id": "emp_burst",
+		"name_key": "weapon.emp_burst.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 15,
+			"cooldown": 3000,
+			"range": 5,
+			"projectile_count": 8,
+			"projectile_speed": 0,
+			"pierce": 999,
+			"duration": 300,
+			"aoe_radius": 5
+		},
+		"per_level": {
+			"damage": 3,
+			"cooldown": -70,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "nova",
+			"waves": 1,
+			"wave_interval": 3000,
+			"stun_duration": 1500
+		},
+		"tags": [
+			"nova",
+			"electric",
+			"shield_break"
+		],
+		"sprite_key": "projectile-emp_burst"
+	},
+	{
+		"id": "thunder_orbit",
+		"name_key": "weapon.thunder_orbit.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 22,
+			"cooldown": 0,
+			"range": 3,
+			"projectile_count": 3,
+			"projectile_speed": 3.5,
+			"pierce": 999,
+			"duration": 0,
+			"aoe_radius": 1
+		},
+		"per_level": {
+			"damage": 4,
+			"cooldown": 0,
+			"projectile_count": 1,
+			"projectile_count_interval": 3
+		},
+		"behavior": {
+			"type": "orbit",
+			"radius": 3,
+			"speed": 3.5
+		},
+		"tags": [
+			"orbit",
+			"electric",
+			"area"
+		],
+		"sprite_key": "projectile-thunder_orbit"
+	},
+	{
+		"id": "frost_ray",
+		"name_key": "weapon.frost_ray.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 12,
+			"cooldown": 0,
+			"range": 7,
+			"projectile_count": 1,
+			"projectile_speed": 0,
+			"pierce": 999,
+			"duration": 600,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 2,
+			"cooldown": 0,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "beam",
+			"slow_percent": 50,
+			"slow_duration": 1000
+		},
+		"tags": [
+			"beam",
+			"cryo"
+		],
+		"sprite_key": "projectile-frost_ray"
+	},
+	{
+		"id": "ice_shard_gun",
+		"name_key": "weapon.ice_shard_gun.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 18,
+			"cooldown": 1100,
+			"range": 6,
+			"projectile_count": 4,
+			"projectile_speed": 10,
+			"pierce": 1,
+			"duration": 700,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 4,
+			"cooldown": -25,
+			"projectile_count": 1,
+			"projectile_count_interval": 3
+		},
+		"behavior": {
+			"type": "spread",
+			"spread_angle": 45,
+			"spread_count": 4,
+			"slow_percent": 30,
+			"slow_duration": 1500
+		},
+		"tags": [
+			"projectile",
+			"cryo",
+			"kinetic"
+		],
+		"sprite_key": "projectile-ice_shard_gun"
+	},
+	{
+		"id": "cryo_mine",
+		"name_key": "weapon.cryo_mine.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 20,
+			"cooldown": 4000,
+			"range": 3.5,
+			"projectile_count": 1,
+			"projectile_speed": 0,
+			"pierce": 999,
+			"duration": 7000,
+			"aoe_radius": 3.5
+		},
+		"per_level": {
+			"damage": 4,
+			"cooldown": -80,
+			"projectile_count": 1,
+			"projectile_count_interval": 5
+		},
+		"behavior": {
+			"type": "zone",
+			"zone_radius": 3.5,
+			"tick_interval": 500,
+			"freeze_duration": 2000
+		},
+		"tags": [
+			"zone",
+			"cryo",
+			"area"
+		],
+		"sprite_key": "projectile-cryo_mine"
+	},
+	{
+		"id": "blizzard_nova",
+		"name_key": "weapon.blizzard_nova.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 30,
+			"cooldown": 3000,
+			"range": 5,
+			"projectile_count": 10,
+			"projectile_speed": 0,
+			"pierce": 999,
+			"duration": 400,
+			"aoe_radius": 5
+		},
+		"per_level": {
+			"damage": 6,
+			"cooldown": -70,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "nova",
+			"waves": 1,
+			"wave_interval": 3000,
+			"slow_duration": 3000
+		},
+		"tags": [
+			"nova",
+			"cryo",
+			"area"
+		],
+		"sprite_key": "projectile-blizzard_nova"
+	},
+	{
+		"id": "frozen_orbit",
+		"name_key": "weapon.frozen_orbit.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 14,
+			"cooldown": 0,
+			"range": 2.5,
+			"projectile_count": 3,
+			"projectile_speed": 2,
+			"pierce": 999,
+			"duration": 0,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 3,
+			"cooldown": 0,
+			"projectile_count": 1,
+			"projectile_count_interval": 4
+		},
+		"behavior": {
+			"type": "orbit",
+			"radius": 2.5,
+			"speed": 2,
+			"freeze_duration": 1000
+		},
+		"tags": [
+			"orbit",
+			"cryo"
+		],
+		"sprite_key": "projectile-frozen_orbit"
+	},
+	{
+		"id": "flamethrower",
+		"name_key": "weapon.flamethrower.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 18,
+			"cooldown": 0,
+			"range": 3.5,
+			"projectile_count": 1,
+			"projectile_speed": 0,
+			"pierce": 999,
+			"duration": 400,
+			"aoe_radius": 1.5
+		},
+		"per_level": {
+			"damage": 3,
+			"cooldown": 0,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "beam",
+			"arc_angle": 45,
+			"dot_duration": 2000,
+			"dot_tick": 500
+		},
+		"tags": [
+			"beam",
+			"flame",
+			"dot"
+		],
+		"sprite_key": "projectile-flamethrower"
+	},
+	{
+		"id": "napalm_bomb",
+		"name_key": "weapon.napalm_bomb.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 50,
+			"cooldown": 3000,
+			"range": 6,
+			"projectile_count": 1,
+			"projectile_speed": 6,
+			"pierce": 0,
+			"duration": 1400,
+			"aoe_radius": 3.5
+		},
+		"per_level": {
+			"damage": 10,
+			"cooldown": -70,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "lob",
+			"explode_on_land": true,
+			"fire_zone_duration": 5000
+		},
+		"tags": [
+			"projectile",
+			"flame",
+			"explosive",
+			"area"
+		],
+		"sprite_key": "projectile-napalm_bomb"
+	},
+	{
+		"id": "fire_swarm",
+		"name_key": "weapon.fire_swarm.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 20,
+			"cooldown": 1800,
+			"range": 9,
+			"projectile_count": 3,
+			"projectile_speed": 7,
+			"pierce": 0,
+			"duration": 2500,
+			"aoe_radius": 1
+		},
+		"per_level": {
+			"damage": 4,
+			"cooldown": -40,
+			"projectile_count": 1,
+			"projectile_count_interval": 3
+		},
+		"behavior": {
+			"type": "homing",
+			"tracking_speed": 4
+		},
+		"tags": [
+			"projectile",
+			"flame",
+			"drone"
+		],
+		"sprite_key": "projectile-fire_swarm"
+	},
+	{
+		"id": "inferno_ring",
+		"name_key": "weapon.inferno_ring.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 24,
+			"cooldown": 0,
+			"range": 3,
+			"projectile_count": 4,
+			"projectile_speed": 3,
+			"pierce": 999,
+			"duration": 0,
+			"aoe_radius": 1
+		},
+		"per_level": {
+			"damage": 5,
+			"cooldown": 0,
+			"projectile_count": 1,
+			"projectile_count_interval": 3
+		},
+		"behavior": {
+			"type": "orbit",
+			"radius": 3,
+			"speed": 3
+		},
+		"tags": [
+			"orbit",
+			"flame",
+			"area"
+		],
+		"sprite_key": "projectile-inferno_ring"
+	},
+	{
+		"id": "meteor_strike",
+		"name_key": "weapon.meteor_strike.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 70,
+			"cooldown": 4000,
+			"range": 8,
+			"projectile_count": 1,
+			"projectile_speed": 0,
+			"pierce": 999,
+			"duration": 600,
+			"aoe_radius": 4
+		},
+		"per_level": {
+			"damage": 12,
+			"cooldown": -100,
+			"projectile_count": 1,
+			"projectile_count_interval": 5
+		},
+		"behavior": {
+			"type": "lob",
+			"delay": 1500,
+			"explode_on_land": true
+		},
+		"tags": [
+			"projectile",
+			"flame",
+			"heavy",
+			"explosive"
+		],
+		"sprite_key": "projectile-meteor_strike"
+	},
+	{
+		"id": "missile_pod",
+		"name_key": "weapon.missile_pod.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 25,
+			"cooldown": 1800,
+			"range": 10,
+			"projectile_count": 4,
+			"projectile_speed": 9,
+			"pierce": 0,
+			"duration": 2000,
+			"aoe_radius": 1.5
+		},
+		"per_level": {
+			"damage": 5,
+			"cooldown": -40,
+			"projectile_count": 1,
+			"projectile_count_interval": 4
+		},
+		"behavior": {
+			"type": "homing",
+			"tracking_speed": 5
+		},
+		"tags": [
+			"projectile",
+			"explosive"
+		],
+		"sprite_key": "projectile-missile_pod"
+	},
+	{
+		"id": "cluster_bomb",
+		"name_key": "weapon.cluster_bomb.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 40,
+			"cooldown": 2500,
+			"range": 7,
+			"projectile_count": 1,
+			"projectile_speed": 7,
+			"pierce": 0,
+			"duration": 1200,
+			"aoe_radius": 2
+		},
+		"per_level": {
+			"damage": 8,
+			"cooldown": -60,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "lob",
+			"explode_on_land": true,
+			"submunition_count": 6
+		},
+		"tags": [
+			"projectile",
+			"explosive",
+			"area"
+		],
+		"sprite_key": "projectile-cluster_bomb"
+	},
+	{
+		"id": "mine_field",
+		"name_key": "weapon.mine_field.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 30,
+			"cooldown": 3500,
+			"range": 5,
+			"projectile_count": 1,
+			"projectile_speed": 0,
+			"pierce": 999,
+			"duration": 10000,
+			"aoe_radius": 2.5
+		},
+		"per_level": {
+			"damage": 6,
+			"cooldown": -80,
+			"projectile_count": 1,
+			"projectile_count_interval": 4
+		},
+		"behavior": {
+			"type": "zone",
+			"zone_radius": 2.5,
+			"tick_interval": 0,
+			"trigger_on_enter": true
+		},
+		"tags": [
+			"zone",
+			"explosive",
+			"area"
+		],
+		"sprite_key": "projectile-mine_field"
+	},
+	{
+		"id": "rocket_barrage",
+		"name_key": "weapon.rocket_barrage.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 20,
+			"cooldown": 500,
+			"range": 8,
+			"projectile_count": 1,
+			"projectile_speed": 12,
+			"pierce": 0,
+			"duration": 900,
+			"aoe_radius": 1.5
+		},
+		"per_level": {
+			"damage": 4,
+			"cooldown": -15,
+			"projectile_count": 1,
+			"projectile_count_interval": 5
+		},
+		"behavior": {
+			"type": "straight"
+		},
+		"tags": [
+			"projectile",
+			"explosive",
+			"rapid"
+		],
+		"sprite_key": "projectile-rocket_barrage"
+	},
+	{
+		"id": "nuke",
+		"name_key": "weapon.nuke.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 120,
+			"cooldown": 5000,
+			"range": 10,
+			"projectile_count": 1,
+			"projectile_speed": 8,
+			"pierce": 0,
+			"duration": 2000,
+			"aoe_radius": 6
+		},
+		"per_level": {
+			"damage": 20,
+			"cooldown": -100,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "charge",
+			"charge_duration": 3000
+		},
+		"tags": [
+			"projectile",
+			"explosive",
+			"heavy",
+			"area"
+		],
+		"sprite_key": "projectile-nuke"
+	},
+	{
+		"id": "void_bolt",
+		"name_key": "weapon.void_bolt.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 28,
+			"cooldown": 1100,
+			"range": 9,
+			"projectile_count": 1,
+			"projectile_speed": 13,
+			"pierce": 2,
+			"duration": 900,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 5,
+			"cooldown": -25,
+			"projectile_count": 1,
+			"projectile_count_interval": 4
+		},
+		"behavior": {
+			"type": "straight",
+			"defense_debuff": 0.2,
+			"debuff_duration": 3000
+		},
+		"tags": [
+			"projectile",
+			"void",
+			"piercing"
+		],
+		"sprite_key": "projectile-void_bolt"
+	},
+	{
+		"id": "gravity_well",
+		"name_key": "weapon.gravity_well.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 18,
+			"cooldown": 4000,
+			"range": 5,
+			"projectile_count": 1,
+			"projectile_speed": 0,
+			"pierce": 999,
+			"duration": 5000,
+			"aoe_radius": 5
+		},
+		"per_level": {
+			"damage": 4,
+			"cooldown": -90,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "zone",
+			"zone_radius": 5,
+			"tick_interval": 400,
+			"pull_force": 3
+		},
+		"tags": [
+			"zone",
+			"void",
+			"gravity",
+			"area"
+		],
+		"sprite_key": "projectile-gravity_well"
+	},
+	{
+		"id": "dark_matter_orb",
+		"name_key": "weapon.dark_matter_orb.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 20,
+			"cooldown": 2000,
+			"range": 9,
+			"projectile_count": 1,
+			"projectile_speed": 4,
+			"pierce": 3,
+			"duration": 4000,
+			"aoe_radius": 1
+		},
+		"per_level": {
+			"damage": 4,
+			"cooldown": -50,
+			"projectile_count": 1,
+			"projectile_count_interval": 4
+		},
+		"behavior": {
+			"type": "homing",
+			"tracking_speed": 2,
+			"dot_duration": 3000,
+			"dot_tick": 600
+		},
+		"tags": [
+			"projectile",
+			"void",
+			"dot"
+		],
+		"sprite_key": "projectile-dark_matter_orb"
+	},
+	{
+		"id": "singularity",
+		"name_key": "weapon.singularity.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 100,
+			"cooldown": 6000,
+			"range": 7,
+			"projectile_count": 1,
+			"projectile_speed": 0,
+			"pierce": 999,
+			"duration": 2000,
+			"aoe_radius": 6
+		},
+		"per_level": {
+			"damage": 16,
+			"cooldown": -120,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "charge",
+			"charge_duration": 3000,
+			"pull_force": 5
+		},
+		"tags": [
+			"zone",
+			"void",
+			"gravity",
+			"area",
+			"heavy"
+		],
+		"sprite_key": "projectile-singularity"
+	},
+	{
+		"id": "void_rift",
+		"name_key": "weapon.void_rift.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 35,
+			"cooldown": 3500,
+			"range": 5.5,
+			"projectile_count": 1,
+			"projectile_speed": 0,
+			"pierce": 999,
+			"duration": 5000,
+			"aoe_radius": 5
+		},
+		"per_level": {
+			"damage": 7,
+			"cooldown": -80,
+			"projectile_count": 0,
+			"projectile_count_interval": 0
+		},
+		"behavior": {
+			"type": "zone",
+			"zone_radius": 5,
+			"tick_interval": 350,
+			"pull_force": 4
+		},
+		"tags": [
+			"zone",
+			"void",
+			"area"
+		],
+		"sprite_key": "projectile-void_rift"
+	},
+	{
+		"id": "scout_drone",
+		"name_key": "weapon.scout_drone.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 14,
+			"cooldown": 2500,
+			"range": 10,
+			"projectile_count": 1,
+			"projectile_speed": 11,
+			"pierce": 0,
+			"duration": 8000,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 2,
+			"cooldown": -50,
+			"projectile_count": 1,
+			"projectile_count_interval": 4
+		},
+		"behavior": {
+			"type": "summon",
+			"summon_count": 1,
+			"summon_lifetime": 8000
+		},
+		"tags": [
+			"summon",
+			"drone",
+			"kinetic"
+		],
+		"sprite_key": "projectile-scout_drone"
+	},
+	{
+		"id": "repair_drone",
+		"name_key": "weapon.repair_drone.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 0,
+			"cooldown": 3000,
+			"range": 0,
+			"projectile_count": 1,
+			"projectile_speed": 0,
+			"pierce": 0,
+			"duration": 8000,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 0,
+			"cooldown": -60,
+			"projectile_count": 1,
+			"projectile_count_interval": 5
+		},
+		"behavior": {
+			"type": "summon",
+			"summon_count": 1,
+			"summon_lifetime": 8000,
+			"heal_per_second": 5
+		},
+		"tags": [
+			"summon",
+			"drone",
+			"heal"
+		],
+		"sprite_key": "projectile-repair_drone"
+	},
+	{
+		"id": "shield_drone",
+		"name_key": "weapon.shield_drone.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 0,
+			"cooldown": 0,
+			"range": 2,
+			"projectile_count": 2,
+			"projectile_speed": 2,
+			"pierce": 999,
+			"duration": 0,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 0,
+			"cooldown": 0,
+			"projectile_count": 1,
+			"projectile_count_interval": 4
+		},
+		"behavior": {
+			"type": "orbit",
+			"radius": 2,
+			"speed": 2,
+			"blocks_projectiles": true
+		},
+		"tags": [
+			"orbit",
+			"drone"
+		],
+		"sprite_key": "projectile-shield_drone"
+	},
+	{
+		"id": "bomber_drone",
+		"name_key": "weapon.bomber_drone.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 30,
+			"cooldown": 2800,
+			"range": 9,
+			"projectile_count": 1,
+			"projectile_speed": 9,
+			"pierce": 0,
+			"duration": 8000,
+			"aoe_radius": 2
+		},
+		"per_level": {
+			"damage": 6,
+			"cooldown": -60,
+			"projectile_count": 1,
+			"projectile_count_interval": 5
+		},
+		"behavior": {
+			"type": "summon",
+			"summon_count": 1,
+			"summon_lifetime": 8000
+		},
+		"tags": [
+			"summon",
+			"drone",
+			"explosive"
+		],
+		"sprite_key": "projectile-bomber_drone"
+	},
+	{
+		"id": "swarm_carrier",
+		"name_key": "weapon.swarm_carrier.name",
+		"slot": "main_weapon",
+		"base": {
+			"damage": 12,
+			"cooldown": 2000,
+			"range": 10,
+			"projectile_count": 4,
+			"projectile_speed": 10,
+			"pierce": 0,
+			"duration": 8000,
+			"aoe_radius": 0
+		},
+		"per_level": {
+			"damage": 2,
+			"cooldown": -40,
+			"projectile_count": 1,
+			"projectile_count_interval": 3
+		},
+		"behavior": {
+			"type": "summon",
+			"summon_count": 4,
+			"summon_lifetime": 8000
+		},
+		"tags": [
+			"summon",
+			"drone",
+			"rapid"
+		],
+		"sprite_key": "projectile-swarm_carrier"
+	}
+]

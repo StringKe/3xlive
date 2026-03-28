@@ -1,0 +1,273 @@
+[
+  {
+    "id": "rogue_ai_core",
+    "name_key": "boss.rogue_ai_core.name",
+    "biome": "genesis",
+    "hp_multiplier": 5,
+    "speed": 1.5,
+    "damage": 30,
+    "exp_value": 500,
+    "sprite_key": "B1_rogue_ai_core",
+    "boss": true,
+    "ai": {
+      "aggro_range": 15,
+      "chase_range": 30,
+      "max_chase_chunks": 5,
+      "forget_time": 60,
+      "wander_radius": 6,
+      "aggro_variance": 0.1,
+      "speed_variance": 0.05
+    },
+    "phases": [
+      {
+        "hp_threshold": 1.0,
+        "behaviors": ["chase"],
+        "description": "Chase phase"
+      },
+      {
+        "hp_threshold": 0.6,
+        "behaviors": ["chase", "summon"],
+        "description": "Summon scout drones"
+      },
+      {
+        "hp_threshold": 0.3,
+        "behaviors": ["chase", "snipe"],
+        "description": "Full screen barrage"
+      }
+    ],
+    "passThrough": true
+  },
+  {
+    "id": "scrapyard_colossus",
+    "name_key": "boss.scrapyard_colossus.name",
+    "biome": "rust_belt",
+    "hp_multiplier": 8,
+    "speed": 1,
+    "damage": 45,
+    "exp_value": 900,
+    "sprite_key": "B2_scrapyard_colossus",
+    "boss": true,
+    "ai": {
+      "aggro_range": 16,
+      "chase_range": 32,
+      "max_chase_chunks": 5,
+      "forget_time": 60,
+      "wander_radius": 5,
+      "aggro_variance": 0.1,
+      "speed_variance": 0.05
+    },
+    "phases": [
+      {
+        "hp_threshold": 1.0,
+        "behaviors": ["chase", "regen"],
+        "description": "Advances while absorbing debris"
+      },
+      {
+        "hp_threshold": 0.65,
+        "behaviors": ["chase", "regen", "summon"],
+        "description": "Summons scrap minions"
+      },
+      {
+        "hp_threshold": 0.3,
+        "behaviors": ["chase", "charge", "summon"],
+        "description": "Enraged charge with debris volley"
+      }
+    ],
+    "passThrough": true
+  },
+  {
+    "id": "storm_archon",
+    "name_key": "boss.storm_archon.name",
+    "biome": "ion_storm",
+    "hp_multiplier": 10,
+    "speed": 1.5,
+    "damage": 55,
+    "exp_value": 1200,
+    "sprite_key": "B3_storm_archon",
+    "boss": true,
+    "ai": {
+      "aggro_range": 18,
+      "chase_range": 35,
+      "max_chase_chunks": 5,
+      "forget_time": 60,
+      "wander_radius": 7,
+      "aggro_variance": 0.1,
+      "speed_variance": 0.05
+    },
+    "phases": [
+      {
+        "hp_threshold": 1.0,
+        "behaviors": ["chase", "snipe"],
+        "description": "Ion bolt barrage"
+      },
+      {
+        "hp_threshold": 0.6,
+        "behaviors": ["orbit", "snipe", "slow"],
+        "description": "Lightning grid deployment"
+      },
+      {
+        "hp_threshold": 0.25,
+        "behaviors": ["blink", "snipe", "summon"],
+        "description": "Teleporting storm fury"
+      }
+    ],
+    "passThrough": true
+  },
+  {
+    "id": "dimensional_rift_lord",
+    "name_key": "boss.dimensional_rift_lord.name",
+    "biome": "wormhole",
+    "hp_multiplier": 12,
+    "speed": 2,
+    "damage": 65,
+    "exp_value": 1600,
+    "sprite_key": "B4_dimensional_rift_lord",
+    "boss": true,
+    "ai": {
+      "aggro_range": 18,
+      "chase_range": 36,
+      "max_chase_chunks": 6,
+      "forget_time": 60,
+      "wander_radius": 7,
+      "aggro_variance": 0.1,
+      "speed_variance": 0.05
+    },
+    "phases": [
+      {
+        "hp_threshold": 1.0,
+        "behaviors": ["blink", "chase"],
+        "description": "Warp assault"
+      },
+      {
+        "hp_threshold": 0.65,
+        "behaviors": ["blink", "pull", "summon"],
+        "description": "Opens rifts, teleports player"
+      },
+      {
+        "hp_threshold": 0.3,
+        "behaviors": ["blink", "pull", "summon", "split"],
+        "description": "Dimensional cascade — clones and rifts"
+      }
+    ],
+    "passThrough": true
+  },
+  {
+    "id": "molten_emperor",
+    "name_key": "boss.molten_emperor.name",
+    "biome": "molten",
+    "hp_multiplier": 15,
+    "speed": 1,
+    "damage": 80,
+    "exp_value": 2200,
+    "sprite_key": "B5_molten_emperor",
+    "boss": true,
+    "ai": {
+      "aggro_range": 17,
+      "chase_range": 34,
+      "max_chase_chunks": 5,
+      "forget_time": 60,
+      "wander_radius": 6,
+      "aggro_variance": 0.1,
+      "speed_variance": 0.05
+    },
+    "phases": [
+      {
+        "hp_threshold": 1.0,
+        "behaviors": ["chase", "regen"],
+        "description": "Magma wave advance"
+      },
+      {
+        "hp_threshold": 0.6,
+        "behaviors": ["chase", "regen", "summon"],
+        "description": "Expanding lava pool, summons flame darts"
+      },
+      {
+        "hp_threshold": 0.25,
+        "behaviors": ["chase", "charge", "regen", "summon"],
+        "description": "Full eruption — lava covers arena"
+      }
+    ],
+    "passThrough": true
+  },
+  {
+    "id": "void_sovereign",
+    "name_key": "boss.void_sovereign.name",
+    "biome": "dark_matter",
+    "hp_multiplier": 18,
+    "speed": 1.5,
+    "damage": 95,
+    "exp_value": 3000,
+    "sprite_key": "B6_void_sovereign",
+    "boss": true,
+    "ai": {
+      "aggro_range": 20,
+      "chase_range": 40,
+      "max_chase_chunks": 6,
+      "forget_time": 60,
+      "wander_radius": 8,
+      "aggro_variance": 0.1,
+      "speed_variance": 0.05
+    },
+    "phases": [
+      {
+        "hp_threshold": 1.0,
+        "behaviors": ["cloak", "chase"],
+        "description": "Darkness veil — arena dims"
+      },
+      {
+        "hp_threshold": 0.6,
+        "behaviors": ["cloak", "chase", "pull"],
+        "description": "Gravity collapse, periodic void bursts"
+      },
+      {
+        "hp_threshold": 0.25,
+        "behaviors": ["cloak", "blink", "pull", "summon"],
+        "description": "Singularity — continuous void attacks"
+      }
+    ],
+    "passThrough": true
+  },
+  {
+    "id": "admiral_kron",
+    "name_key": "boss.admiral_kron.name",
+    "biome": "citadel",
+    "hp_multiplier": 25,
+    "speed": 1.5,
+    "damage": 110,
+    "exp_value": 5000,
+    "sprite_key": "B7_admiral_kron",
+    "boss": true,
+    "ai": {
+      "aggro_range": 20,
+      "chase_range": 40,
+      "max_chase_chunks": 6,
+      "forget_time": 60,
+      "wander_radius": 8,
+      "aggro_variance": 0.1,
+      "speed_variance": 0.05
+    },
+    "phases": [
+      {
+        "hp_threshold": 1.0,
+        "behaviors": ["chase", "shield"],
+        "description": "Command stance — calls vanguards"
+      },
+      {
+        "hp_threshold": 0.75,
+        "behaviors": ["chase", "shield", "summon"],
+        "description": "Fleet deployment — summons elite mix"
+      },
+      {
+        "hp_threshold": 0.45,
+        "behaviors": ["chase", "snipe", "summon"],
+        "description": "Orbital barrage — artillery from above"
+      },
+      {
+        "hp_threshold": 0.15,
+        "behaviors": ["charge", "snipe", "summon", "reflect"],
+        "description": "Last stand — summons all elite types, enraged"
+      }
+    ],
+    "passThrough": true
+  }
+]

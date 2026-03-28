@@ -1,0 +1,44 @@
+[
+  {
+    "id": "standard_reactor",
+    "name_key": "equipment.standard_reactor.name",
+    "slot": "core",
+    "base_stats": { "cooldown_reduction": 0.05, "max_hp": 8 },
+    "tier": 1
+  },
+  {
+    "id": "fusion_cell",
+    "name_key": "equipment.fusion_cell.name",
+    "slot": "core",
+    "base_stats": { "cooldown_reduction": 0.09, "max_hp": 15, "attack_damage": 3 },
+    "tier": 2
+  },
+  {
+    "id": "antimatter_reactor",
+    "name_key": "equipment.antimatter_reactor.name",
+    "slot": "core",
+    "base_stats": { "cooldown_reduction": 0.14, "max_hp": 25, "attack_damage": 6 },
+    "tier": 3
+  },
+  {
+    "id": "dark_energy_core",
+    "name_key": "equipment.dark_energy_core.name",
+    "slot": "core",
+    "base_stats": { "cooldown_reduction": 0.20, "max_hp": 40, "attack_damage": 10, "area_size": 0.08 },
+    "tier": 4
+  },
+  {
+    "id": "singularity_core",
+    "name_key": "equipment.singularity_core.name",
+    "slot": "core",
+    "base_stats": { "cooldown_reduction": 0.28, "max_hp": 60, "attack_damage": 16, "area_size": 0.15 },
+    "tier": 5
+  },
+  {
+    "id": "void_heart",
+    "name_key": "equipment.void_heart.name",
+    "slot": "core",
+    "base_stats": { "cooldown_reduction": 0.32, "max_hp": 75, "attack_damage": 20, "area_size": 0.20, "luck": 15 },
+    "tier": 5
+  }
+]

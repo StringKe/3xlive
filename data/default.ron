@@ -1,0 +1,100 @@
+GameConfig(
+    discs: DiscTable(templates: [
+        DiscTemplate(id: "starter_disc", quality: "Common", slots: 4, base_fire_rate: 1.5, base_energy: 100.0, base_energy_regen: 8.0, base_spread: 0.05),
+        DiscTemplate(id: "rapid_disc", quality: "Uncommon", slots: 5, base_fire_rate: 3.0, base_energy: 80.0, base_energy_regen: 10.0, base_spread: 0.15),
+        DiscTemplate(id: "power_disc", quality: "Rare", slots: 6, base_fire_rate: 0.8, base_energy: 150.0, base_energy_regen: 6.0, base_spread: 0.02),
+        DiscTemplate(id: "storm_disc", quality: "Epic", slots: 7, base_fire_rate: 4.0, base_energy: 200.0, base_energy_regen: 15.0, base_spread: 0.2),
+        DiscTemplate(id: "archmage_disc", quality: "Legendary", slots: 8, base_fire_rate: 2.0, base_energy: 300.0, base_energy_regen: 20.0, base_spread: 0.0),
+    ]),
+    programs: ProgramTable(templates: [
+        // 弹射体 Program
+        ProgramTemplate(id: "spark_bolt", program_type: "Projectile", energy_cost: 10.0, damage: Some(8.0), speed: Some(400.0), lifetime: Some(2.0), size: Some(4.0), mod_type: None, count: None, trigger_type: None, payload_slots: None, effect_type: None, duration: None, magnitude: None),
+        ProgramTemplate(id: "magic_arrow", program_type: "Projectile", energy_cost: 15.0, damage: Some(15.0), speed: Some(500.0), lifetime: Some(3.0), size: Some(5.0), mod_type: None, count: None, trigger_type: None, payload_slots: None, effect_type: None, duration: None, magnitude: None),
+        ProgramTemplate(id: "fireball", program_type: "Projectile", energy_cost: 30.0, damage: Some(40.0), speed: Some(300.0), lifetime: Some(2.5), size: Some(8.0), mod_type: None, count: None, trigger_type: None, payload_slots: None, effect_type: None, duration: None, magnitude: None),
+        // 轨迹修改
+        ProgramTemplate(id: "homing_mod", program_type: "TrajectoryMod", energy_cost: 5.0, damage: None, speed: None, lifetime: None, size: None, mod_type: Some("Homing"), count: None, trigger_type: None, payload_slots: None, effect_type: None, duration: None, magnitude: None),
+        ProgramTemplate(id: "orbit_mod", program_type: "TrajectoryMod", energy_cost: 8.0, damage: None, speed: None, lifetime: None, size: None, mod_type: Some("Orbit"), count: None, trigger_type: None, payload_slots: None, effect_type: None, duration: None, magnitude: None),
+        // 数量修改
+        ProgramTemplate(id: "double_cast", program_type: "QuantityMod", energy_cost: 12.0, damage: None, speed: None, lifetime: None, size: None, mod_type: None, count: Some(2), trigger_type: None, payload_slots: None, effect_type: None, duration: None, magnitude: None),
+        ProgramTemplate(id: "triple_cast", program_type: "QuantityMod", energy_cost: 20.0, damage: None, speed: None, lifetime: None, size: None, mod_type: None, count: Some(3), trigger_type: None, payload_slots: None, effect_type: None, duration: None, magnitude: None),
+        // 触发器
+        ProgramTemplate(id: "on_hit_trigger", program_type: "Trigger", energy_cost: 15.0, damage: None, speed: None, lifetime: None, size: None, mod_type: None, count: None, trigger_type: Some("OnHit"), payload_slots: Some(2), effect_type: None, duration: None, magnitude: None),
+        // 状态效果
+        ProgramTemplate(id: "poison_touch", program_type: "StatusEffect", energy_cost: 8.0, damage: None, speed: None, lifetime: None, size: None, mod_type: None, count: None, trigger_type: None, payload_slots: None, effect_type: Some("Poison"), duration: Some(3.0), magnitude: Some(5.0)),
+        ProgramTemplate(id: "freeze_bolt", program_type: "StatusEffect", energy_cost: 12.0, damage: None, speed: None, lifetime: None, size: None, mod_type: None, count: None, trigger_type: None, payload_slots: None, effect_type: Some("Freeze"), duration: Some(2.0), magnitude: Some(1.0)),
+        // 阵型修正
+        ProgramTemplate(id: "fan_formation", program_type: "FormationMod", energy_cost: 10.0, damage: None, speed: None, lifetime: None, size: None, mod_type: Some("Fan"), count: None, trigger_type: None, payload_slots: None, effect_type: None, duration: None, magnitude: None),
+        ProgramTemplate(id: "ring_formation", program_type: "FormationMod", energy_cost: 15.0, damage: None, speed: None, lifetime: None, size: None, mod_type: Some("Ring"), count: None, trigger_type: None, payload_slots: None, effect_type: None, duration: None, magnitude: None),
+        // 时序修正
+        ProgramTemplate(id: "burst_timing", program_type: "TimingMod", energy_cost: 8.0, damage: None, speed: None, lifetime: None, size: None, mod_type: Some("Burst"), count: None, trigger_type: None, payload_slots: None, effect_type: None, duration: None, magnitude: None),
+        ProgramTemplate(id: "gatling_timing", program_type: "TimingMod", energy_cost: 12.0, damage: None, speed: None, lifetime: None, size: None, mod_type: Some("Gatling"), count: None, trigger_type: None, payload_slots: None, effect_type: None, duration: None, magnitude: None),
+        // 伤害修正
+        ProgramTemplate(id: "flat_damage_mod", program_type: "DamageMod", energy_cost: 10.0, damage: None, speed: None, lifetime: None, size: None, mod_type: Some("FlatDamage"), count: None, trigger_type: None, payload_slots: None, effect_type: None, duration: None, magnitude: Some(10.0)),
+        ProgramTemplate(id: "crit_boost_mod", program_type: "DamageMod", energy_cost: 15.0, damage: None, speed: None, lifetime: None, size: None, mod_type: Some("CritBoost"), count: None, trigger_type: None, payload_slots: None, effect_type: None, duration: None, magnitude: Some(0.15)),
+        // 弹射体修正
+        ProgramTemplate(id: "explode_mod", program_type: "ProjectileMod", energy_cost: 12.0, damage: None, speed: None, lifetime: None, size: None, mod_type: Some("Explode"), count: None, trigger_type: None, payload_slots: None, effect_type: None, duration: None, magnitude: Some(1.0)),
+        ProgramTemplate(id: "chain_mod", program_type: "ProjectileMod", energy_cost: 18.0, damage: None, speed: None, lifetime: None, size: None, mod_type: Some("Chain"), count: Some(3), trigger_type: None, payload_slots: None, effect_type: None, duration: None, magnitude: Some(1.0)),
+        // 场地效果
+        ProgramTemplate(id: "damage_zone", program_type: "FieldMod", energy_cost: 20.0, damage: None, speed: None, lifetime: None, size: None, mod_type: Some("DamageZone"), count: None, trigger_type: None, payload_slots: None, effect_type: None, duration: Some(5.0), magnitude: Some(10.0)),
+        ProgramTemplate(id: "slow_field", program_type: "FieldMod", energy_cost: 15.0, damage: None, speed: None, lifetime: None, size: None, mod_type: Some("SlowField"), count: None, trigger_type: None, payload_slots: None, effect_type: None, duration: Some(4.0), magnitude: Some(0.5)),
+    ]),
+    monsters: MonsterTable(templates: [
+        MonsterTemplate(id: "slime", hp: 20.0, speed: 60.0, damage: 5.0, xp_reward: 10, detection_radius: 256.0, traits: []),
+        MonsterTemplate(id: "bat", hp: 15.0, speed: 100.0, damage: 3.0, xp_reward: 8, detection_radius: 320.0, traits: []),
+        MonsterTemplate(id: "skeleton", hp: 40.0, speed: 50.0, damage: 10.0, xp_reward: 20, detection_radius: 288.0, traits: []),
+        MonsterTemplate(id: "ghost", hp: 30.0, speed: 70.0, damage: 8.0, xp_reward: 15, detection_radius: 300.0, traits: ["phase"]),
+        MonsterTemplate(id: "golem", hp: 100.0, speed: 30.0, damage: 20.0, xp_reward: 50, detection_radius: 200.0, traits: ["shield"]),
+        MonsterTemplate(id: "demon", hp: 60.0, speed: 80.0, damage: 15.0, xp_reward: 35, detection_radius: 350.0, traits: ["charge"]),
+    ]),
+    loot: LootTable(entries: [
+        LootEntry(monster_id: "slime", drops: [
+            LootDropEntry(item_id: "xp_gem", weight: 1.0, min_count: 1, max_count: 3),
+        ]),
+        LootEntry(monster_id: "bat", drops: [
+            LootDropEntry(item_id: "xp_gem", weight: 1.0, min_count: 1, max_count: 2),
+        ]),
+        LootEntry(monster_id: "skeleton", drops: [
+            LootDropEntry(item_id: "xp_gem", weight: 0.8, min_count: 2, max_count: 5),
+            LootDropEntry(item_id: "program_drop", weight: 0.2, min_count: 1, max_count: 1),
+        ]),
+        LootEntry(monster_id: "ghost", drops: [
+            LootDropEntry(item_id: "xp_gem", weight: 0.7, min_count: 2, max_count: 4),
+            LootDropEntry(item_id: "program_drop", weight: 0.3, min_count: 1, max_count: 1),
+        ]),
+        LootEntry(monster_id: "golem", drops: [
+            LootDropEntry(item_id: "xp_gem", weight: 0.5, min_count: 5, max_count: 10),
+            LootDropEntry(item_id: "disc_drop", weight: 0.3, min_count: 1, max_count: 1),
+            LootDropEntry(item_id: "program_drop", weight: 0.2, min_count: 1, max_count: 2),
+        ]),
+        LootEntry(monster_id: "demon", drops: [
+            LootDropEntry(item_id: "xp_gem", weight: 0.6, min_count: 3, max_count: 7),
+            LootDropEntry(item_id: "program_drop", weight: 0.4, min_count: 1, max_count: 2),
+        ]),
+    ]),
+    waves: WaveConfig(waves: [
+        WaveEntry(time_start: 0.0, time_end: 60.0, monster_ids: ["slime"], spawn_rate: 2.0, max_count: 20),
+        WaveEntry(time_start: 30.0, time_end: 120.0, monster_ids: ["slime", "bat"], spawn_rate: 3.0, max_count: 30),
+        WaveEntry(time_start: 90.0, time_end: 240.0, monster_ids: ["bat", "skeleton"], spawn_rate: 3.5, max_count: 35),
+        WaveEntry(time_start: 180.0, time_end: 360.0, monster_ids: ["skeleton", "ghost"], spawn_rate: 4.0, max_count: 40),
+        WaveEntry(time_start: 300.0, time_end: 540.0, monster_ids: ["ghost", "demon"], spawn_rate: 4.5, max_count: 45),
+        WaveEntry(time_start: 480.0, time_end: 600.0, monster_ids: ["demon", "golem"], spawn_rate: 5.0, max_count: 50),
+    ]),
+    milestones: [
+        // 击杀 100 只怪物 → 解锁 Trigger 程序类型
+        MilestoneDefinition(id: 1, condition: TotalKills(100), reward: NewProgramType(Trigger)),
+        // 击杀 300 只怪物 → 解锁 FormationMod 程序类型
+        MilestoneDefinition(id: 2, condition: TotalKills(300), reward: NewProgramType(FormationMod)),
+        // 累计 10000 伤害 → 解锁 TimingMod 程序类型
+        MilestoneDefinition(id: 3, condition: TotalDamage(10000.0), reward: NewProgramType(TimingMod)),
+        // 单局存活 120 秒 → 解锁 Uncommon 品质 Disc
+        MilestoneDefinition(id: 4, condition: SingleRunSurvival(120.0), reward: DiscQualityOption(Uncommon)),
+        // 击杀 3 个 Boss → 解锁 Rare 品质 Disc
+        MilestoneDefinition(id: 5, condition: BossKills(3), reward: DiscQualityOption(Rare)),
+        // 累计 50000 伤害 → 解锁 DamageMod 程序类型
+        MilestoneDefinition(id: 6, condition: TotalDamage(50000.0), reward: NewProgramType(DamageMod)),
+        // 击杀 500 只怪物 → 解锁 ProjectileMod 程序类型
+        MilestoneDefinition(id: 7, condition: TotalKills(500), reward: NewProgramType(ProjectileMod)),
+        // 击杀 5 个 Boss → 解锁 FieldMod 程序类型
+        MilestoneDefinition(id: 8, condition: BossKills(5), reward: NewProgramType(FieldMod)),
+    ],
+)

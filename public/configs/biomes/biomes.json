@@ -1,0 +1,106 @@
+[
+  {
+    "id": "genesis",
+    "name_key": "biome.genesis.name",
+    "bg_color": "#0a0a2e",
+    "level_range": [1, 5],
+    "luck_bonus": 0,
+    "special_mechanic": null,
+    "hazards": [],
+    "hazard_density": 0,
+    "ground_color": {"base": "#0a1a0a", "vary": "#142a14", "noise_freq": 0.03}
+  },
+  {
+    "id": "rust_belt",
+    "name_key": "biome.rust_belt.name",
+    "bg_color": "#2a1a0a",
+    "level_range": [5, 12],
+    "luck_bonus": 5,
+    "special_mechanic": null,
+    "hazards": [
+      {"id": "HZ_crystal_spire", "weight": 0.4},
+      {"id": "HZ_emp_field", "weight": 0.4},
+      {"id": "HZ_acid_fog", "weight": 0.2}
+    ],
+    "hazard_density": 0.08,
+    "ground_color": {"base": "#2a1a0a", "vary": "#3a2a14", "noise_freq": 0.03}
+  },
+  {
+    "id": "ion_storm",
+    "name_key": "biome.ion_storm.name",
+    "bg_color": "#0a2a3a",
+    "level_range": [10, 18],
+    "luck_bonus": 10,
+    "special_mechanic": "periodic_emp",
+    "hazards": [
+      {"id": "HZ_lightning", "weight": 0.5},
+      {"id": "HZ_emp_field", "weight": 0.3},
+      {"id": "HZ_crystal_spire", "weight": 0.2}
+    ],
+    "hazard_density": 0.12,
+    "ground_color": {"base": "#0a2a3a", "vary": "#143a4a", "noise_freq": 0.03}
+  },
+  {
+    "id": "wormhole",
+    "name_key": "biome.wormhole.name",
+    "bg_color": "#1a0a2a",
+    "level_range": [15, 25],
+    "luck_bonus": 15,
+    "special_mechanic": "teleport_portals",
+    "hazards": [
+      {"id": "HZ_spore_cloud", "weight": 0.4},
+      {"id": "HZ_web_slime", "weight": 0.3},
+      {"id": "HZ_hive_wall", "weight": 0.3}
+    ],
+    "hazard_density": 0.15,
+    "ground_color": {"base": "#1a0a2a", "vary": "#2a143a", "noise_freq": 0.03}
+  },
+  {
+    "id": "molten",
+    "name_key": "biome.molten.name",
+    "bg_color": "#3a1a0a",
+    "level_range": [20, 30],
+    "luck_bonus": 20,
+    "special_mechanic": "heat_zones",
+    "hazards": [
+      {"id": "HZ_volcano", "weight": 0.35},
+      {"id": "HZ_lava_crack", "weight": 0.4},
+      {"id": "HZ_acid_fog", "weight": 0.25}
+    ],
+    "hazard_density": 0.18,
+    "ground_color": {"base": "#3a1a0a", "vary": "#4a2a0a", "noise_freq": 0.03}
+  },
+  {
+    "id": "dark_matter",
+    "name_key": "biome.dark_matter.name",
+    "bg_color": "#050505",
+    "level_range": [25, 35],
+    "luck_bonus": 25,
+    "special_mechanic": "low_visibility",
+    "hazards": [
+      {"id": "HZ_spore_cloud", "weight": 0.3},
+      {"id": "HZ_emp_field", "weight": 0.25},
+      {"id": "HZ_hive_wall", "weight": 0.25},
+      {"id": "HZ_web_slime", "weight": 0.2}
+    ],
+    "hazard_density": 0.20,
+    "ground_color": {"base": "#050508", "vary": "#0a0a10", "noise_freq": 0.03}
+  },
+  {
+    "id": "citadel",
+    "name_key": "biome.citadel.name",
+    "bg_color": "#2a0a0a",
+    "level_range": [30, 40],
+    "luck_bonus": 30,
+    "special_mechanic": "high_boss_density",
+    "hazards": [
+      {"id": "HZ_hive_wall", "weight": 0.25},
+      {"id": "HZ_web_slime", "weight": 0.2},
+      {"id": "HZ_volcano", "weight": 0.15},
+      {"id": "HZ_lightning", "weight": 0.2},
+      {"id": "HZ_spore_cloud", "weight": 0.2}
+    ],
+    "hazard_density": 0.25,
+    "ground_color": {"base": "#2a0a0a", "vary": "#3a1414", "noise_freq": 0.03}
+  }
+]

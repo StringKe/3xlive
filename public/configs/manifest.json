@@ -1,0 +1,37 @@
+{
+  "version": "0.8.0",
+  "configs": {
+    "room": "/configs/room/room.json",
+    "weapons": [
+      "/configs/weapons/main_weapons.json",
+      "/configs/weapons/sub_weapons.json",
+      "/configs/weapons/evolved_weapons.json"
+    ],
+    "evolutions": "/configs/weapons/evolutions.json",
+    "synergies": "/configs/synergies/synergies.json",
+    "monsters": [
+      "/configs/monsters/biome_plains.json",
+      "/configs/monsters/biome_forest.json",
+      "/configs/monsters/biome_swamp.json",
+      "/configs/monsters/biome_desert.json",
+      "/configs/monsters/biome_snow.json",
+      "/configs/monsters/biome_ruin.json",
+      "/configs/monsters/biome_volcano.json"
+    ],
+    "passives": "/configs/passives/items.json",
+    "equipment": [
+      "/configs/equipment/helmets.json",
+      "/configs/equipment/chests.json",
+      "/configs/equipment/gloves.json",
+      "/configs/equipment/boots.json",
+      "/configs/equipment/amulets.json",
+      "/configs/equipment/rings.json",
+      "/configs/equipment/belts.json",
+      "/configs/equipment/cloaks.json",
+      "/configs/equipment/artifacts.json"
+    ],
+    "affixes": [
+      "/configs/affixes/universal.json"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "3xlive",
+  // account_id 通过环境变量 CLOUDFLARE_ACCOUNT_ID 或 wrangler login 提供
+  "main": "src/server/index.ts",
+  "compatibility_date": "2026-03-17",
+  "compatibility_flags": ["nodejs_compat"],
+  "placement": { "mode": "smart" },
+  "upload_source_maps": true,
+
+  "routes": [
+    {
+      "pattern": "3xlive.app",
+      "custom_domain": true,
+    },
+  ],
+
+  "assets": {
+    "not_found_handling": "single-page-application",
+  },
+
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "adaedc3d12f347c6a412f9883e61f9ef",
+    },
+  ],
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "3xlive",
+      "database_id": "d9a882bb-097f-4499-a052-5a3ff85f9658",
+    },
+  ],
+
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true,
+    },
+  },
+
+  // GameRoomWasm Durable Object 已移除（单人本地模式），需要 delete-class 迁移
+  "durable_objects": {
+    "bindings": [],
+  },
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["GameRoom"] },
+    { "tag": "v2", "renamed_classes": [{ "from": "GameRoom", "to": "GameRoomWasm" }] },
+    { "tag": "v3", "deleted_classes": ["GameRoomWasm"] },
+  ],
+}

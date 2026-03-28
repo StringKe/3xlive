@@ -1,0 +1,272 @@
+[
+  {
+    "id": "reinforced_hull",
+    "name_key": "passive.reinforced_hull.name",
+    "desc_key": "passive.reinforced_hull.desc",
+    "max_level": 5,
+    "category": "defense",
+    "sprite_key": "passive_reinforced_hull",
+    "per_level": { "hp_percent": 0.1 }
+  },
+  {
+    "id": "overclocked_engine",
+    "name_key": "passive.overclocked_engine.name",
+    "desc_key": "passive.overclocked_engine.desc",
+    "max_level": 5,
+    "category": "mobility",
+    "sprite_key": "passive_overclocked_engine",
+    "per_level": { "speed_percent": 0.08 }
+  },
+  {
+    "id": "rapid_coolant",
+    "name_key": "passive.rapid_coolant.name",
+    "desc_key": "passive.rapid_coolant.desc",
+    "max_level": 5,
+    "category": "offense",
+    "sprite_key": "passive_rapid_coolant",
+    "per_level": { "cdr": 0.1 }
+  },
+  {
+    "id": "extended_magazine",
+    "name_key": "passive.extended_magazine.name",
+    "desc_key": "passive.extended_magazine.desc",
+    "max_level": 5,
+    "category": "offense",
+    "sprite_key": "passive_extended_magazine",
+    "per_level": { "proj_duration_percent": 0.15 }
+  },
+  {
+    "id": "armor_plating",
+    "name_key": "passive.armor_plating.name",
+    "desc_key": "passive.armor_plating.desc",
+    "max_level": 5,
+    "category": "defense",
+    "sprite_key": "passive_armor_plating",
+    "per_level": { "reduction_percent": 0.03 }
+  },
+  {
+    "id": "scavenger",
+    "name_key": "passive.scavenger.name",
+    "desc_key": "passive.scavenger.desc",
+    "max_level": 5,
+    "category": "utility",
+    "sprite_key": "passive_scavenger",
+    "per_level": { "exp_bonus": 0.2 }
+  },
+  {
+    "id": "fortune_module",
+    "name_key": "passive.fortune_module.name",
+    "desc_key": "passive.fortune_module.desc",
+    "max_level": 5,
+    "category": "utility",
+    "sprite_key": "passive_fortune_module",
+    "per_level": { "luck": 10 }
+  },
+  {
+    "id": "multi_shot",
+    "name_key": "passive.multi_shot.name",
+    "desc_key": "passive.multi_shot.desc",
+    "max_level": 3,
+    "category": "offense",
+    "sprite_key": "passive_multi_shot",
+    "per_level": { "projectile_count": 1 }
+  },
+  {
+    "id": "critical_matrix",
+    "name_key": "passive.critical_matrix.name",
+    "desc_key": "passive.critical_matrix.desc",
+    "max_level": 5,
+    "category": "offense",
+    "sprite_key": "passive_critical_matrix",
+    "per_level": { "crit_rate": 0.05 }
+  },
+  {
+    "id": "critical_amplifier",
+    "name_key": "passive.critical_amplifier.name",
+    "desc_key": "passive.critical_amplifier.desc",
+    "max_level": 5,
+    "category": "offense",
+    "sprite_key": "passive_critical_amplifier",
+    "per_level": { "crit_damage_pct": 20 }
+  },
+  {
+    "id": "magnetic_field",
+    "name_key": "passive.magnetic_field.name",
+    "desc_key": "passive.magnetic_field.desc",
+    "max_level": 5,
+    "category": "utility",
+    "sprite_key": "passive_magnetic_field",
+    "per_level": { "pickup_bonus": 0.3 }
+  },
+  {
+    "id": "shield_generator",
+    "name_key": "passive.shield_generator.name",
+    "desc_key": "passive.shield_generator.desc",
+    "max_level": 3,
+    "category": "defense",
+    "sprite_key": "passive_shield_generator",
+    "per_level": { "shield_layers": 1 }
+  },
+  {
+    "id": "evasion_thrusters",
+    "name_key": "passive.evasion_thrusters.name",
+    "desc_key": "passive.evasion_thrusters.desc",
+    "max_level": 5,
+    "category": "defense",
+    "sprite_key": "passive_evasion_thrusters",
+    "per_level": { "dodge_chance_pct": 5 }
+  },
+  {
+    "id": "afterburner",
+    "name_key": "passive.afterburner.name",
+    "desc_key": "passive.afterburner.desc",
+    "max_level": 3,
+    "category": "mobility",
+    "sprite_key": "passive_afterburner",
+    "per_level": { "dodge_cooldown_reduction_pct": 15 }
+  },
+  {
+    "id": "life_steal",
+    "name_key": "passive.life_steal.name",
+    "desc_key": "passive.life_steal.desc",
+    "max_level": 5,
+    "category": "offense",
+    "sprite_key": "passive_life_steal",
+    "per_level": { "life_steal": 0.02 }
+  },
+  {
+    "id": "area_expansion",
+    "name_key": "passive.area_expansion.name",
+    "desc_key": "passive.area_expansion.desc",
+    "max_level": 5,
+    "category": "offense",
+    "sprite_key": "passive_area_expansion",
+    "per_level": { "area_size_pct": 12 }
+  },
+  {
+    "id": "piercing_rounds",
+    "name_key": "passive.piercing_rounds.name",
+    "desc_key": "passive.piercing_rounds.desc",
+    "max_level": 3,
+    "category": "offense",
+    "sprite_key": "passive_piercing_rounds",
+    "per_level": { "pierce": 1 }
+  },
+  {
+    "id": "bouncing_charge",
+    "name_key": "passive.bouncing_charge.name",
+    "desc_key": "passive.bouncing_charge.desc",
+    "max_level": 3,
+    "category": "offense",
+    "sprite_key": "passive_bouncing_charge",
+    "per_level": { "bounce_count": 1 }
+  },
+  {
+    "id": "chain_reaction",
+    "name_key": "passive.chain_reaction.name",
+    "desc_key": "passive.chain_reaction.desc",
+    "max_level": 3,
+    "category": "offense",
+    "sprite_key": "passive_chain_reaction",
+    "per_level": { "chain_targets": 1 }
+  },
+  {
+    "id": "drone_commander",
+    "name_key": "passive.drone_commander.name",
+    "desc_key": "passive.drone_commander.desc",
+    "max_level": 5,
+    "category": "offense",
+    "sprite_key": "passive_drone_commander",
+    "per_level": { "drone_damage_pct": 15 }
+  },
+  {
+    "id": "dot_amplifier",
+    "name_key": "passive.dot_amplifier.name",
+    "desc_key": "passive.dot_amplifier.desc",
+    "max_level": 5,
+    "category": "offense",
+    "sprite_key": "passive_dot_amplifier",
+    "per_level": { "dot_damage_pct": 20 }
+  },
+  {
+    "id": "cryo_efficiency",
+    "name_key": "passive.cryo_efficiency.name",
+    "desc_key": "passive.cryo_efficiency.desc",
+    "max_level": 5,
+    "category": "utility",
+    "sprite_key": "passive_cryo_efficiency",
+    "per_level": { "slow_strength_pct": 15 }
+  },
+  {
+    "id": "explosive_radius",
+    "name_key": "passive.explosive_radius.name",
+    "desc_key": "passive.explosive_radius.desc",
+    "max_level": 5,
+    "category": "offense",
+    "sprite_key": "passive_explosive_radius",
+    "per_level": { "explosion_radius_pct": 10 }
+  },
+  {
+    "id": "beam_focus",
+    "name_key": "passive.beam_focus.name",
+    "desc_key": "passive.beam_focus.desc",
+    "max_level": 5,
+    "category": "offense",
+    "sprite_key": "passive_beam_focus",
+    "per_level": { "beam_damage_pct": 10 }
+  },
+  {
+    "id": "homing_precision",
+    "name_key": "passive.homing_precision.name",
+    "desc_key": "passive.homing_precision.desc",
+    "max_level": 5,
+    "category": "offense",
+    "sprite_key": "passive_homing_precision",
+    "per_level": { "homing_turn_speed_pct": 10 }
+  },
+  {
+    "id": "gravity_mastery",
+    "name_key": "passive.gravity_mastery.name",
+    "desc_key": "passive.gravity_mastery.desc",
+    "max_level": 5,
+    "category": "utility",
+    "sprite_key": "passive_gravity_mastery",
+    "per_level": { "gravity_effect_pct": 15 }
+  },
+  {
+    "id": "emergency_warp",
+    "name_key": "passive.emergency_warp.name",
+    "desc_key": "passive.emergency_warp.desc",
+    "max_level": 3,
+    "category": "defense",
+    "sprite_key": "passive_emergency_warp",
+    "per_level": { "death_save_chance_pct": 10 }
+  },
+  {
+    "id": "kill_streak_extend",
+    "name_key": "passive.kill_streak_extend.name",
+    "desc_key": "passive.kill_streak_extend.desc",
+    "max_level": 5,
+    "category": "utility",
+    "sprite_key": "passive_kill_streak_extend",
+    "per_level": { "kill_streak_duration_s": 1 }
+  },
+  {
+    "id": "thorns",
+    "name_key": "passive.thorns.name",
+    "desc_key": "passive.thorns.desc",
+    "max_level": 5,
+    "category": "defense",
+    "sprite_key": "passive_thorns",
+    "per_level": { "damage_reflect_pct": 15 }
+  },
+  {
+    "id": "void_corruption",
+    "name_key": "passive.void_corruption.name",
+    "desc_key": "passive.void_corruption.desc",
+    "max_level": 5,
+    "category": "offense",
+    "sprite_key": "passive_void_corruption",
+    "per_level": { "kill_explosion_chance_pct": 10 }
+  }
+]

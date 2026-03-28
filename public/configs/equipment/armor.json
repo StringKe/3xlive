@@ -1,0 +1,44 @@
+[
+  {
+    "id": "salvaged_plating",
+    "name_key": "equipment.salvaged_plating.name",
+    "slot": "armor",
+    "base_stats": { "max_hp": 15, "damage_reduction": 2 },
+    "tier": 1
+  },
+  {
+    "id": "reinforced_hull_armor",
+    "name_key": "equipment.reinforced_hull_armor.name",
+    "slot": "armor",
+    "base_stats": { "max_hp": 28, "damage_reduction": 4 },
+    "tier": 2
+  },
+  {
+    "id": "composite_carapace",
+    "name_key": "equipment.composite_carapace.name",
+    "slot": "armor",
+    "base_stats": { "max_hp": 45, "damage_reduction": 6, "dodge_chance": 0.03 },
+    "tier": 3
+  },
+  {
+    "id": "titan_plating",
+    "name_key": "equipment.titan_plating.name",
+    "slot": "armor",
+    "base_stats": { "max_hp": 70, "damage_reduction": 9, "damage_reduction": 9 },
+    "tier": 4
+  },
+  {
+    "id": "quantum_weave_armor",
+    "name_key": "equipment.quantum_weave_armor.name",
+    "slot": "armor",
+    "base_stats": { "max_hp": 100, "damage_reduction": 14, "lifesteal": 0.02 },
+    "tier": 5
+  },
+  {
+    "id": "rebel_vanguard_suit",
+    "name_key": "equipment.rebel_vanguard_suit.name",
+    "slot": "armor",
+    "base_stats": { "max_hp": 120, "damage_reduction": 16, "crit_rate": 0.05, "lifesteal": 0.03 },
+    "tier": 5
+  }
+]

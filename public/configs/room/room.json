@@ -1,0 +1,9 @@
+{
+  "maxPlayers": 50,
+  "tickRate": 5,
+  "regions": ["me", "eu", "apac"],
+  "roomPreCreateThreshold": 40,
+  "roomCooldownMinPlayers": 10,
+  "roomCooldownDuration": 300000,
+  "roomRecycleDuration": 180000
+}

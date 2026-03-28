@@ -1,0 +1,107 @@
+[
+  {
+    "id": "scout_drone",
+    "name_key": "monster.scout_drone.name",
+    "hp": 10,
+    "damage": 5,
+    "speed": 2,
+    "behaviors": ["chase"],
+    "traits": [],
+    "exp_value": 5,
+    "sprite_key": "E01_scout_drone",
+    "ai": {
+      "aggro_range": 6,
+      "chase_range": 10,
+      "max_chase_chunks": 1,
+      "forget_time": 5,
+      "wander_radius": 2,
+      "aggro_variance": 0.3,
+      "speed_variance": 0.2
+    },
+    "passThrough": false
+  },
+  {
+    "id": "patrol_craft",
+    "name_key": "monster.patrol_craft.name",
+    "hp": 20,
+    "damage": 6,
+    "speed": 1.5,
+    "behaviors": ["patrol", "chase"],
+    "traits": [],
+    "exp_value": 8,
+    "sprite_key": "E02_patrol_craft",
+    "ai": {
+      "aggro_range": 6,
+      "chase_range": 10,
+      "max_chase_chunks": 1,
+      "forget_time": 6,
+      "wander_radius": 3,
+      "aggro_variance": 0.25,
+      "speed_variance": 0.15
+    },
+    "passThrough": false
+  },
+  {
+    "id": "signal_jammer",
+    "name_key": "monster.signal_jammer.name",
+    "hp": 40,
+    "damage": 7,
+    "speed": 1.5,
+    "behaviors": ["orbit", "slow"],
+    "traits": [],
+    "exp_value": 12,
+    "sprite_key": "E03_signal_jammer",
+    "ai": {
+      "aggro_range": 7,
+      "chase_range": 10,
+      "max_chase_chunks": 1,
+      "forget_time": 5,
+      "wander_radius": 2,
+      "aggro_variance": 0.2,
+      "speed_variance": 0.2
+    },
+    "passThrough": false
+  },
+  {
+    "id": "debris_floater",
+    "name_key": "monster.debris_floater.name",
+    "hp": 100,
+    "damage": 8,
+    "speed": 1,
+    "behaviors": ["patrol"],
+    "traits": [],
+    "exp_value": 15,
+    "sprite_key": "E04_debris_floater",
+    "ai": {
+      "aggro_range": 5,
+      "chase_range": 8,
+      "max_chase_chunks": 1,
+      "forget_time": 5,
+      "wander_radius": 4,
+      "aggro_variance": 0.3,
+      "speed_variance": 0.1
+    },
+    "passThrough": false
+  },
+  {
+    "id": "rebel_recruit",
+    "name_key": "monster.rebel_recruit.name",
+    "hp": 15,
+    "damage": 6,
+    "speed": 1.5,
+    "behaviors": ["chase"],
+    "traits": [],
+    "exp_value": 7,
+    "sprite_key": "E05_rebel_recruit",
+    "ai": {
+      "aggro_range": 6,
+      "chase_range": 9,
+      "max_chase_chunks": 1,
+      "forget_time": 5,
+      "wander_radius": 2,
+      "aggro_variance": 0.3,
+      "speed_variance": 0.2
+    },
+    "passThrough": false
+  }
+]

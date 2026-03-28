@@ -1,0 +1,149 @@
+[
+  {
+    "id": "warp_stalker",
+    "name_key": "monster.warp_stalker.name",
+    "hp": 70,
+    "damage": 22,
+    "speed": 2,
+    "behaviors": ["blink", "chase"],
+    "traits": [],
+    "exp_value": 50,
+    "sprite_key": "E20_warp_stalker",
+    "ai": {
+      "aggro_range": 8,
+      "chase_range": 13,
+      "max_chase_chunks": 2,
+      "forget_time": 7,
+      "wander_radius": 2,
+      "aggro_variance": 0.25,
+      "speed_variance": 0.2
+    },
+    "passThrough": false
+  },
+  {
+    "id": "rift_guardian",
+    "name_key": "monster.rift_guardian.name",
+    "hp": 200,
+    "damage": 25,
+    "speed": 1,
+    "behaviors": ["shield", "summon"],
+    "traits": [],
+    "exp_value": 65,
+    "sprite_key": "E21_rift_guardian",
+    "ai": {
+      "aggro_range": 7,
+      "chase_range": 10,
+      "max_chase_chunks": 2,
+      "forget_time": 9,
+      "wander_radius": 2,
+      "aggro_variance": 0.15,
+      "speed_variance": 0.1
+    },
+    "passThrough": false
+  },
+  {
+    "id": "dimensional_shrieker",
+    "name_key": "monster.dimensional_shrieker.name",
+    "hp": 30,
+    "damage": 20,
+    "speed": 2,
+    "behaviors": ["orbit", "pull"],
+    "traits": [],
+    "exp_value": 42,
+    "sprite_key": "E22_dimensional_shrieker",
+    "ai": {
+      "aggro_range": 8,
+      "chase_range": 12,
+      "max_chase_chunks": 2,
+      "forget_time": 6,
+      "wander_radius": 3,
+      "aggro_variance": 0.3,
+      "speed_variance": 0.2
+    },
+    "passThrough": false
+  },
+  {
+    "id": "phase_drifter",
+    "name_key": "monster.phase_drifter.name",
+    "hp": 75,
+    "damage": 23,
+    "speed": 1.5,
+    "behaviors": ["cloak", "flank"],
+    "traits": ["phase"],
+    "exp_value": 55,
+    "sprite_key": "E23_phase_drifter",
+    "ai": {
+      "aggro_range": 8,
+      "chase_range": 12,
+      "max_chase_chunks": 2,
+      "forget_time": 7,
+      "wander_radius": 2,
+      "aggro_variance": 0.2,
+      "speed_variance": 0.15
+    },
+    "passThrough": true
+  },
+  {
+    "id": "wormhole_mine",
+    "name_key": "monster.wormhole_mine.name",
+    "hp": 25,
+    "damage": 28,
+    "speed": 1,
+    "behaviors": ["patrol", "kamikaze"],
+    "traits": [],
+    "exp_value": 35,
+    "sprite_key": "E24_wormhole_mine",
+    "ai": {
+      "aggro_range": 6,
+      "chase_range": 9,
+      "max_chase_chunks": 1,
+      "forget_time": 5,
+      "wander_radius": 3,
+      "aggro_variance": 0.2,
+      "speed_variance": 0.1
+    },
+    "passThrough": false
+  },
+  {
+    "id": "gravity_anchor",
+    "name_key": "monster.gravity_anchor.name",
+    "hp": 220,
+    "damage": 24,
+    "speed": 1,
+    "behaviors": ["chase", "pull", "slow"],
+    "traits": [],
+    "exp_value": 70,
+    "sprite_key": "E25_gravity_anchor",
+    "ai": {
+      "aggro_range": 9,
+      "chase_range": 12,
+      "max_chase_chunks": 2,
+      "forget_time": 9,
+      "wander_radius": 2,
+      "aggro_variance": 0.15,
+      "speed_variance": 0.1
+    },
+    "passThrough": false
+  },
+  {
+    "id": "rift_splitter",
+    "name_key": "monster.rift_splitter.name",
+    "hp": 80,
+    "damage": 22,
+    "speed": 1.5,
+    "behaviors": ["chase", "split", "blink"],
+    "traits": [],
+    "exp_value": 60,
+    "sprite_key": "E26_rift_splitter",
+    "ai": {
+      "aggro_range": 8,
+      "chase_range": 12,
+      "max_chase_chunks": 2,
+      "forget_time": 7,
+      "wander_radius": 2,
+      "aggro_variance": 0.2,
+      "speed_variance": 0.15
+    },
+    "passThrough": false
+  }
+]

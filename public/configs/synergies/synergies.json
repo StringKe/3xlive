@@ -1,0 +1,90 @@
+[
+  {
+    "id": "thermal_shock",
+    "name_key": "synergy.thermal_shock.name",
+    "description_key": "synergy.thermal_shock.desc",
+    "required_tags": ["cryo", "flame"],
+    "effect": { "type": "damage_bonus", "target": "flame_vs_frozen", "value": 100 }
+  },
+  {
+    "id": "superconductor",
+    "name_key": "synergy.superconductor.name",
+    "description_key": "synergy.superconductor.desc",
+    "required_tags": ["electric", "cryo"],
+    "effect": { "type": "stat_bonus", "stat": "chain_range_pct", "value": 50 }
+  },
+  {
+    "id": "fragmentation",
+    "name_key": "synergy.fragmentation.name",
+    "description_key": "synergy.fragmentation.desc",
+    "required_tags": ["kinetic", "explosive"],
+    "effect": { "type": "on_hit", "trigger": "projectile_hit", "spawn": "explosion" }
+  },
+  {
+    "id": "antimatter",
+    "name_key": "synergy.antimatter.name",
+    "description_key": "synergy.antimatter.desc",
+    "required_tags": ["energy", "void"],
+    "effect": { "type": "flag", "flag": "beam_ignore_shields" }
+  },
+  {
+    "id": "ionization",
+    "name_key": "synergy.ionization.name",
+    "description_key": "synergy.ionization.desc",
+    "required_tags": ["plasma", "electric"],
+    "effect": { "type": "multi", "effects": [
+      { "type": "stat_bonus", "stat": "dot_damage_pct", "value": 50 },
+      { "type": "on_hit", "trigger": "dot_tick", "apply": "slow", "value": 20 }
+    ]}
+  },
+  {
+    "id": "implosion",
+    "name_key": "synergy.implosion.name",
+    "description_key": "synergy.implosion.desc",
+    "required_tags": ["gravity", "explosive"],
+    "effect": { "type": "on_expire", "trigger": "gravity_zone_end", "spawn": "explosion" }
+  },
+  {
+    "id": "swarm_ai",
+    "name_key": "synergy.swarm_ai.name",
+    "description_key": "synergy.swarm_ai.desc",
+    "required_tags": ["drone", "drone"],
+    "required_tag_count": 2,
+    "effect": { "type": "stat_bonus", "stat": "drone_damage_pct", "value": 30 }
+  },
+  {
+    "id": "smart_rounds",
+    "name_key": "synergy.smart_rounds.name",
+    "description_key": "synergy.smart_rounds.desc",
+    "required_tags": ["homing", "piercing"],
+    "effect": { "type": "flag", "flag": "homing_continues_after_pierce" }
+  },
+  {
+    "id": "absolute_zero",
+    "name_key": "synergy.absolute_zero.name",
+    "description_key": "synergy.absolute_zero.desc",
+    "required_tags": ["beam", "cryo"],
+    "effect": { "type": "stat_bonus", "stat": "freeze_duration_mult", "value": 2 }
+  },
+  {
+    "id": "firestorm",
+    "name_key": "synergy.firestorm.name",
+    "description_key": "synergy.firestorm.desc",
+    "required_tags": ["flame", "explosive"],
+    "effect": { "type": "on_explode", "trigger": "explosion", "spawn": "fire_zone" }
+  },
+  {
+    "id": "armor_piercing",
+    "name_key": "synergy.armor_piercing.name",
+    "description_key": "synergy.armor_piercing.desc",
+    "required_tags": ["heavy", "shield_break"],
+    "effect": { "type": "flag", "flag": "bypass_shields_entirely" }
+  },
+  {
+    "id": "tesla_storm",
+    "name_key": "synergy.tesla_storm.name",
+    "description_key": "synergy.tesla_storm.desc",
+    "required_tags": ["rapid", "electric"],
+    "effect": { "type": "on_nth_hit", "n": 5, "trigger": "auto_chain" }
+  }
+]
